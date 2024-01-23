@@ -1,0 +1,19 @@
+========================================================== Detailed Report
++tpl(1T)   ftl.ftl                            unknown
+-tpl(1T)   ftl.ftl                            unknown
++file      package.json                       unknown
+           ftl.ftl
+-file      package.json.package.json          ftl.ftl
+           unknown
++tpl(1T)   ftl.ftl                            unknown(!2)
+-tpl(1T)   ftl.ftl                            unknown(!2)
++file      Extension.ts                       unknown(!2)
+           ftl.ftl
+-file      src.Extension.ts                   ftl.ftl
+           unknown(!2)
++tpl(1T)   ftl.ftl                            unknown(!3)
+-tpl(1T)   ftl.ftl                            unknown(!3)
++file      SD4DevelopmentLspWrapper.ts        unknown(!3)
+           ftl.ftl
+-file      src.SD4DevelopmentLspWrapper.ts    ftl.ftl
+           unknown(!3)

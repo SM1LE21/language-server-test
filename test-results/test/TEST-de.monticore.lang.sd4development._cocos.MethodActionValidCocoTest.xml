@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.monticore.lang.sd4development._cocos.MethodActionValidCocoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-01-19T11:03:06" hostname="Tuns-MacBook-Pro.local" time="0.031">
+  <properties/>
+  <testcase name="testCocoViolation()" classname="de.monticore.lang.sd4development._cocos.MethodActionValidCocoTest" time="0.013"/>
+  <testcase name="[1] lecture/example_1.sd" classname="de.monticore.lang.sd4development._cocos.MethodActionValidCocoTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

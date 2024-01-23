@@ -1,0 +1,42 @@
+========================================================== Variables assigned
+#Asmt  #Adds  Variable name
+1x     0x     inheritanceHelper
+1x     0x     process_boolean_attrs_pattern
+1x     0x     process_component_nodes_pattern
+1x     0x     grammarPrinter
+1x     0x     nameHelper
+1x     0x     grammarInfo
+1x     0x     visit_pattern_external
+1x     0x     visit_pattern
+1x     0x     var_traverse_replacement
+2x     0x     astHelper
+1x     0x     var_visit_pattern
+1x     0x     collect_string_attrs
+3x     0x     cdPrinter
+1x     0x     visit_optional
+1x     0x     process_boolean_alt_attrs_pattern
+1x     0x     collect_rhs_listvars
+1x     0x     attributeHelper
+1x     0x     parserHelper
+1x     0x     symbolTable
+1x     0x     package
+1x     0x     grammarNameLower
+1x     0x     collect_stringlist_attrs
+1x     0x     grammarName
+1x     0x     process_component_lists_pattern
+1x     0x     visit_list
+3x     0x     service
+1x     0x     collect_rhs_vars
+1x     0x     process_stringlist_attrs
+1x     0x     process_string_attrs
+1x     0x     productions
+1x     0x     traverse_replacement
+3x     0x     cd4c
+1x     0x     visit_negation
+========================================================== Explanation
+Variables assigned: list all variable names that got a value during the
+process.
+Each entry knows:
+ - #Asmt        how often has a value been assigned (setValue)
+ - #Adds        how often has the value been extended (addValue)
+(EOF)

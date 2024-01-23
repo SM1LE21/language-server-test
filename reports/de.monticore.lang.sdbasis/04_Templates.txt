@@ -1,0 +1,432 @@
+========================================================== Used Templates
+#Calls:   Template Name
+24x       ASTCNodeInit.ftl
+408x      ASTCNodeMethodDelegate.ftl
+14x       Accept.ftl
+120x      AcceptSuper.ftl
+8x        AddChecker.ftl
+1x        AddSubScope.ftl
+9x        AddVisitor.ftl
+16x       Alt.ftl
+2844x     Annotations.ftl
+78x       AsAST.ftl
+227x      Attribute.ftl
+11x       Block.ftl
+24x       BuildMethod.ftl
+24x       BuilderDelegatorMethod.ftl
+20x       BuilderMethod.ftl
+1x        CheckIfContinueAsSubScope.ftl
+47x       Class.ftl
+1x        Clear.ftl
+1x        CoCoCheckerConstructor.ftl
+47x       Constructor.ftl
+1x        ConstructorArtifactScope.ftl
+1x        ConstructorGlobalScope.ftl
+1x        ConstructorOD.ftl
+1x        ConstructorScopesGenitorDelegator.ftl
+5x        ContinueWithEnclosingScope4ArtifactScope.ftl
+1x        CreateFromAST.ftl
+1x        CreateFromASTDelegator.ftl
+1x        CreateScope.ftl
+12x       DeepCloneWithParameters.ftl
+8x        DeepEqualsWithComments.ftl
+8x        DeepEqualsWithOrder.ftl
+46x       DelegatingMethods.ftl
+1x        Deserialize.ftl
+1x        DeserializeArtifactScope.ftl
+1x        DeserializeScope.ftl
+1x        DeserializeSymbols.ftl
+88x       EmptyBody.ftl
+1x        EmptyParserInfo.ftl
+2x        EndVisit4Scope.ftl
+1x        EndVisitScope4SSC.ftl
+2x        EndVisitSymbol.ftl
+1x        Enum.ftl
+12x       EqualAttributes.ftl
+12x       EqualsWithComments.ftl
+1x        FPPConstructor.ftl
+1x        FPPSetPrintComments.ftl
+1x        FPPTraverserInit.ftl
+1x        FullPrettyPrintMethod.ftl
+88x       Get.ftl
+42x       Get4Opt.ftl
+1x        GetAllLanguages.ftl
+2x        GetDefinition.ftl
+1x        GetFullName.ftl
+1x        GetMillMethod.ftl
+1x        GetName.ftl
+1x        GetRemainingNameForResolveDown.ftl
+1x        GetSubScopes.ftl
+2x        GetSymbol.ftl
+1x        GetSymbolSize.ftl
+1x        GetSymbols2Json.ftl
+1x        GetTopLevelSymbol.ftl
+69x       Handle.ftl
+19x       HandleASTInheritance.ftl
+12x       HandleMethod.ftl
+12x       HandleOD.ftl
+3x        HandleSymTabInheritance.ftl
+80x       Imports.ftl
+1x        InheritanceHandlerMethod.ftl
+84x       InheritedSetEnclosingScope.ftl
+2x        Init.ftl
+1x        InitMeMethod.ftl
+1x        InitMethod.ftl
+33x       Interface.ftl
+78x       IsAST.ftl
+42x       IsPresent4Opt.ftl
+2x        IsPresentDefinition.ftl
+1x        IsPresentName.ftl
+2x        IsPresentSymbol.ftl
+12x       IsValidMethod.ftl
+5x        Load.ftl
+3x        Load2.ftl
+1x        LoadFileForModelName.ftl
+2572x     Method.ftl
+332x      MethodDelegate.ftl
+84x       MethodDelegate4ASTBuilder.ftl
+81x       Package.ftl
+1x        ParserInfo.ftl
+7x        ParserInfoForSuperLang.ftl
+1x        PrettyPrintBuilderMethod.ftl
+1x        PrettyPrintProtectedBuilderMethod.ftl
+1x        PrintAttribute.ftl
+1x        PrintObject.ftl
+1x        PrintObjectDiagram.ftl
+16x       ProtectedBuilderMethod.ftl
+1x        ProtectedGlobalScopeMethod.ftl
+35x       ProtectedMethodForSuper.ftl
+1x        PutOnStack.ftl
+1x        RemoveSubScope.ftl
+1x        Reset.ftl
+1x        ResetMethod.ftl
+5x        ResolveAdapted.ftl
+5x        ResolveMany4GlobalScope.ftl
+5x        ResolveSubKinds.ftl
+2x        Serialize4Symbols2Json.ftl
+1x        SerializeAS4ScopeDeSer.ftl
+1x        SerializeS2J4ScopeDeSer.ftl
+73x       Set.ftl
+13x       Set4ASTBuilder.ftl
+7x        Set4ASTBuilderOpt.ftl
+35x       Set4Opt.ftl
+35x       SetAbsent.ftl
+7x        SetAbsent4ASTBuilderOpt.ftl
+2x        SetEnclosingScope.ftl
+8x        SetHandler.ftl
+1x        SetSpanningSymbol.ftl
+1x        SetSpanningSymbolAbsent.ftl
+1x        SetSubScopes.ftl
+1x        Store.ftl
+18x       Terminal.ftl
+4x        Tokens.ftl
+24x       Traverse.ftl
+2x        TraverseScope.ftl
+1x        TypeDispatcherGetter.ftl
+2x        UpdateLoader.ftl
+148x      Value.ftl
+2x        Visit4SSC.ftl
+1x        VisitArtifactScope.ftl
+9x        VisitNoSymbol.ftl
+1x        VisitScope4SSC.ftl
+1x        VisitScope4STP.ftl
+1x        ZeroArgsConstructorGlobalScope.ftl
+========================================================== Unused Templates
+_ast/ast_class/refSymbolMethods/GetDefinitionList.ftl
+_ast/ast_class/refSymbolMethods/GetSymbolList.ftl
+_ast/ast_class/refSymbolMethods/UpdateLoaderList.ftl
+_ast/ast_class/symboltable/InheritedSetSpannedScope.ftl
+_ast/ast_constants/ASTConstantsConstructor.ftl
+_ast/builder/BuildInit.ftl
+_ast/builder/SetInherited.ftl
+_ast/builder/opt/SetAbsentInherited.ftl
+_ast_emf/ast_class/EGet.ftl
+_ast_emf/ast_class/EIsSet.ftl
+_ast_emf/ast_class/ESet.ftl
+_ast_emf/ast_class/EToString.ftl
+_ast_emf/ast_class/EUnset.ftl
+_ast_emf/ast_class/Set4EMFASTClass.ftl
+_ast_emf/emf_package/CreatePackageContents.ftl
+_ast_emf/emf_package/EmfPackage.ftl
+_ast_emf/emf_package/GetASTESuperPackages.ftl
+_ast_emf/emf_package/InitEmfMethod.ftl
+_ast_emf/emf_package/InitializePackageContents.ftl
+_cli/AddAdditionalOptions.ftl
+_cli/AddStandardOptions.ftl
+_cli/Init.ftl
+_cli/InitOptions.ftl
+_cli/Main.ftl
+_cli/Parser.ftl
+_cli/PrettyPrint.ftl
+_cli/Print.ftl
+_cli/PrintHelp.ftl
+_cli/PrintVersion.ftl
+_cli/Run.ftl
+_cli/StoreSymbols.ftl
+_cli/SymbolTable.ftl
+_lsp/DocumentInformationFilter.ftl
+_lsp/DocumentInformationProvider.ftl
+_lsp/IndexingManager.ftl
+_lsp/LanguageServer.ftl
+_lsp/LanguageServerBuilder.ftl
+_lsp/LanguageServerCLI.ftl
+_lsp/LanguageServerContext.ftl
+_lsp/LspAntlrLexer.ftl
+_lsp/LspAntlrParser.ftl
+_lsp/SymbolUsageResolutionProvider.ftl
+_lsp/SyntaxHighlightingService.ftl
+_lsp/TextDocumentService.ftl
+_lsp/WorkspaceService.ftl
+_lsp/features/code_action/CodeActionProvider.ftl
+_lsp/features/code_lens/CodeLensProvider.ftl
+_lsp/features/code_lens/ServerCommandCodeLens.ftl
+_lsp/features/completion/CompletionAntlrParser.ftl
+_lsp/features/completion/CompletionProvider.ftl
+_lsp/features/completion/ExpectedTokenVisitor.ftl
+_lsp/features/completion/SymbolCollection.ftl
+_lsp/features/completion/SymbolCollector.ftl
+_lsp/features/completion/strategy/DefaultCompletionStrategy.ftl
+_lsp/features/completion/strategy/ImportStatementCompletionStrategy.ftl
+_lsp/features/completion/strategy/QNameCompletionStrategy.ftl
+_lsp/features/completion/strategy/referenced_symbol/ReferencedSymbolStrategy.ftl
+_lsp/features/definition/DefinitionProvider.ftl
+_lsp/features/diagnostics/DiagnosticsProvider.ftl
+_lsp/features/formatting/FormattingProvider.ftl
+_lsp/features/formatting/PrettyPrintingFormattingProvider.ftl
+_lsp/features/hover/HoverProvider.ftl
+_lsp/features/references/ReferencesProvider.ftl
+_lsp/features/rename/PrepareRenameProvider.ftl
+_lsp/features/rename/RenameProvider.ftl
+_lsp/features/symbols/DocumentSymbolProvider.ftl
+_lsp/features/syntax_highlighting/LexerProvider.ftl
+_lsp/features/syntax_highlighting/SemanticTokensProvider.ftl
+_lsp/freemarker_implicit.ftl
+_lsp/language_access/ArtifactScopeWithFindings.ftl
+_lsp/language_access/LanguageAccess.ftl
+_lsp/language_access/LspCoCoRunner.ftl
+_lsp/language_access/ScopeManager.ftl
+_lsp/language_aggregation/LanguageAggrCoCoCheckProvider.ftl
+_lsp/language_aggregation/LanguageAggrServer.ftl
+_lsp/language_aggregation/LanguageAggrServerCLI.ftl
+_lsp/language_aggregation/LanguageAggrSymbolUsageResolutionProvider.ftl
+_lsp/language_aggregation/LanguageAggrSyntaxHighlightingService.ftl
+_lsp/language_aggregation/LanguageAggrTextDocumentService.ftl
+_parser/Create.ftl
+_parser/CreateReader.ftl
+_parser/Parse.ftl
+_parser/ParseOverridden.ftl
+_parser/ParseOverriddenReader.ftl
+_parser/ParseReader.ftl
+_parser/ParseRule.ftl
+_parser/ParseRuleReader.ftl
+_parser/ParseRuleString.ftl
+_parser/ParseString.ftl
+_parser/ParseSup.ftl
+_parser/ParseSupReader.ftl
+_prettyprinter/full/FPPReplaceKeywords.ftl
+_prettyprinter/pp/HandleInheritMethod.ftl
+_prettyprinter/pp/HandleMethodError.ftl
+_symboltable/AcceptTop.ftl
+_symboltable/globalscope/CacheMethod.ftl
+_symboltable/iglobalscope/CalculateModelNamesFor.ftl
+_symboltable/iscope/ContinueAsSubScope.ftl
+_symboltable/iscope/ContinueWithEnclosingScope4IScope.ftl
+_symboltable/iscope/Filter.ftl
+_symboltable/iscope/ResolveDelegate.ftl
+_symboltable/iscope/ResolveDownMany.ftl
+_symboltable/iscope/ResolveMany4IScope.ftl
+_symboltable/iscope/ResolveManyLocally.ftl
+_symboltable/scope/AcceptOwn.ftl
+_symboltable/scope/AcceptScope.ftl
+_symboltable/scope/SetSpanningSymbolOpt.ftl
+_symboltable/serialization/PrintListAttribute.ftl
+_symboltable/serialization/PrintOptionalAttribute.ftl
+_symboltable/serialization/ReadListAttribute.ftl
+_symboltable/serialization/ReadOptionalAttribute.ftl
+_symboltable/serialization/symbolDeSer/Deserialize4SymbolDeSer.ftl
+_symboltable/serialization/symbolDeSer/Serialize4SymbolDeSer.ftl
+_symboltable/serialization/symbols2Json/PrintKindHierarchy.ftl
+_symboltable/serialization/symbols2Json/SerializeOptAttribute.ftl
+_symboltable/serialization/symbols2Json/SerializeRelevantSubScopes.ftl
+_symboltable/serialization/symbols2Json/SerializeSimpleListAttribute.ftl
+_symboltable/serialization/symbols2Json/SerializeSymbol.ftl
+_symboltable/serialization/symbols2Json/VisitSymbol.ftl
+_symboltable/symTabMill/GetMill.ftl
+_symboltable/symTabMill/InitMe.ftl
+_symboltable/symTabMill/Reset.ftl
+_symboltable/symTabMill/SymTabBuilderMethod.ftl
+_symboltable/symbol/BuildSymbol.ftl
+_symboltable/symbol/DefaultDelegate.ftl
+_symboltable/symbol/DetermineFullName.ftl
+_symboltable/symbol/DeterminePackageName.ftl
+_symboltable/symbol/GetScope.ftl
+_symboltable/symbol/NameSetter.ftl
+_symboltable/symbol/SetSpannedScope.ftl
+_symboltable/symbol/ToString.ftl
+_symboltable/symbolsurrogate/BuildSymbolSurrogate.ftl
+_symboltable/symbolsurrogate/CheckLazyLoadDelegate.ftl
+_symboltable/symbolsurrogate/ConstructorSymbolSurrogate.ftl
+_symboltable/symbolsurrogate/DetermineFullName.ftl
+_symboltable/symbolsurrogate/DeterminePackageName.ftl
+_symboltable/symbolsurrogate/GetEnclosingScopeSymbolSurrogate.ftl
+_symboltable/symbolsurrogate/GetFullName.ftl
+_symboltable/symbolsurrogate/LazyLoadDelegate.ftl
+_symboltable/symbolsurrogate/Set4SymbolSurrogate.ftl
+_symboltable/symbolsurrogate/SetEnclosingScope4SymbolSurrogate.ftl
+_visitor/Handle.ftl
+_visitor/Traverse.ftl
+_visitor/delegator/BuildDelegatorVisitor.ftl
+_visitor/delegator/SetRealThis.ftl
+_visitor/delegator/SetVisitor.ftl
+_visitor/delegator/VisitorMethods.ftl
+_visitor/handler/HandleASTNodeInheritance.ftl
+_visitor/inheritance/HandleASTInheritance.ftl
+_visitor/inheritance/HandleSymTabInheritance.ftl
+_visitor/parentaware/GetParent.ftl
+_visitor/parentaware/Travers.ftl
+_visitor/scope/TraverseScope.ftl
+_visitor/traverser/SetRealThis.ftl
+cd2java/CD2Java.ftl
+data/ConstructorAttributesSetter.ftl
+de/monticore/tf/odrules/CheckConditions.ftl
+de/monticore/tf/odrules/CheckConstraints.ftl
+de/monticore/tf/odrules/CheckSubConstraints.ftl
+de/monticore/tf/odrules/ClassMatch.ftl
+de/monticore/tf/odrules/ClassMatchList.ftl
+de/monticore/tf/odrules/ConstantCode.ftl
+de/monticore/tf/odrules/Constructor.ftl
+de/monticore/tf/odrules/DoPatternMatching.ftl
+de/monticore/tf/odrules/DoPatternMatchingList.ftl
+de/monticore/tf/odrules/DoPatternMatchingOptional.ftl
+de/monticore/tf/odrules/DoReplacement.ftl
+de/monticore/tf/odrules/FindActualCandidates.ftl
+de/monticore/tf/odrules/FindCandidates.ftl
+de/monticore/tf/odrules/FindSearchPlan.ftl
+de/monticore/tf/odrules/HostGraphElementGetters.ftl
+de/monticore/tf/odrules/MatchStates.ftl
+de/monticore/tf/odrules/ParameterSetters.ftl
+de/monticore/tf/odrules/SplitSearchplan.ftl
+de/monticore/tf/odrules/TransformationClass.ftl
+de/monticore/tf/odrules/TransformationUnit.ftl
+de/monticore/tf/odrules/UndoReplacement.ftl
+de/monticore/tf/odrules/constantcode/HandleChangeObject.ftl
+de/monticore/tf/odrules/constantcode/HandleDeleteObject.ftl
+de/monticore/tf/odrules/constantcode/HandleMatchObject.ftl
+de/monticore/tf/odrules/dopatternmatching/HandleListObject.ftl
+de/monticore/tf/odrules/dopatternmatching/HandleNormalObject.ftl
+de/monticore/tf/odrules/dopatternmatching/HandleNotObject.ftl
+de/monticore/tf/odrules/dopatternmatching/HandleOptObject.ftl
+de/monticore/tf/odrules/doreplacement/ChangeAttributeValueList.ftl
+de/monticore/tf/odrules/doreplacement/ChangeAttributeValueSingleCompositeInList.ftl
+de/monticore/tf/odrules/doreplacement/ChangeAttributeValueSingleCompositeNotInList.ftl
+de/monticore/tf/odrules/doreplacement/ChangeAttributeValueSinglePrimitive.ftl
+de/monticore/tf/odrules/doreplacement/ChangeAttributeValues.ftl
+de/monticore/tf/odrules/doreplacement/CreateObjects.ftl
+de/monticore/tf/odrules/undoreplacement/ChangeAttributeValueList.ftl
+de/monticore/tf/odrules/undoreplacement/ChangeAttributeValueSingleCompositeInList.ftl
+de/monticore/tf/odrules/undoreplacement/ChangeAttributeValueSingleCompositeNotInList.ftl
+de/monticore/tf/odrules/undoreplacement/ChangeAttributeValueSinglePrimitive.ftl
+de/monticore/tf/odrules/undoreplacement/ChangeAttributeValues.ftl
+dstlgen/MainClass.ftl
+dstlgen/VisitNTNegation.ftl
+dstlgen/VisitNTOptional.ftl
+dstlgen/cocos/AssignedOnlyOnceCoCo.ftl
+dstlgen/cocos/CoCoVisitorBuilder.ftl
+dstlgen/cocos/CollectRHSListVars.ftl
+dstlgen/cocos/CollectRHSVariablesVisitor.ftl
+dstlgen/cocos/CollectRHSVars.ftl
+dstlgen/cocos/DiffSchemaVarTypeCoCo.ftl
+dstlgen/cocos/DiffSchemaVarTypeVisitor.ftl
+dstlgen/cocos/NegElemVisitor.ftl
+dstlgen/cocos/NoDeleteWithoutParentCoCo.ftl
+dstlgen/cocos/NoDeleteWithoutParentVisitor.ftl
+dstlgen/cocos/NoDeleteWithoutParentVisitorBuilder.ftl
+dstlgen/cocos/NoEmptyRepCoCo.ftl
+dstlgen/cocos/NoNegElemChangeCoCo.ftl
+dstlgen/cocos/NoNegElemCoCo.ftl
+dstlgen/cocos/NoNegElemNestCoCo.ftl
+dstlgen/cocos/NoOptOnRHSCoCo.ftl
+dstlgen/cocos/NoOptOnRHSCoCoSub.ftl
+dstlgen/cocos/NoOptWithinNotCoCo.ftl
+dstlgen/cocos/NoOptWithinNotCoCoSub.ftl
+dstlgen/cocos/NoRepOnRHSCoCo.ftl
+dstlgen/cocos/NoSchemaVarAnonRhsCoCo.ftl
+dstlgen/cocos/RepElemVisitor.ftl
+dstlgen/cocos/ReplacementOpCoco.ftl
+dstlgen/cocos/SchemaVarNamingCoCo.ftl
+dstlgen/cocos/SchemaVarRepRhsCoCo.ftl
+dstlgen/cocos/TransCoCos.ftl
+dstlgen/rule2od/BooleanAltAttrs.ftl
+dstlgen/rule2od/BooleanAttrs.ftl
+dstlgen/rule2od/ComponentLists.ftl
+dstlgen/rule2od/ComponentNodes.ftl
+dstlgen/rule2od/EndvisitNTList.ftl
+dstlgen/rule2od/Rule2OD.ftl
+dstlgen/rule2od/Rule2ODVisitor.ftl
+dstlgen/rule2od/StringAttrs.ftl
+dstlgen/rule2od/StringListAttrs.ftl
+dstlgen/rule2od/TraverseNTReplacement.ftl
+dstlgen/rule2od/VisitNTList.ftl
+dstlgen/rule2od/VisitNTPattern.ftl
+dstlgen/rule2od/VisitNTPatternExternal.ftl
+dstlgen/variables/RuleCollectVariables.ftl
+dstlgen/variables/RuleCollectVariablesVisitor.ftl
+dstlgen/variables/VarStringAttrs.ftl
+dstlgen/variables/VarStringListAttrs.ftl
+dstlgen/variables/VarTraverseNTReplacement.ftl
+dstlgen/variables/VarVisitNTPattern.ftl
+eclipse-plugin-files/META-INF/MANIFEST.ftl
+eclipse-plugin-files/build.ftl
+eclipse-plugin-files/gitignore.ftl
+eclipse-plugin-files/src/de/monticore/langname/lsp/eclipseplugin/LangnameStreamConnectionProvider.ftl
+intellij-plugin-files/gradleProperties.ftl
+intellij-plugin-files/settingsGradle.ftl
+intellij-plugin-files/src/main/java/automata/_lsp/plugin/FileType.ftl
+intellij-plugin-files/src/main/java/automata/_lsp/plugin/Language.ftl
+intellij-plugin-files/src/main/java/automata/_lsp/plugin/PreloadingActivity.ftl
+intellij-plugin-files/src/main/java/automata/_lsp/plugin/psi/FindUsagesProvider.ftl
+intellij-plugin-files/src/main/java/automata/_lsp/plugin/psi/ParserDefinition.ftl
+intellij-plugin-files/src/main/java/automata/_lsp/plugin/syntaxhighlighting/ColorSettingsPage.ftl
+intellij-plugin-files/src/main/java/automata/_lsp/plugin/syntaxhighlighting/SyntaxHighlighterFactory.ftl
+metadata/Properties.ftl
+mill/ProtectedBuilderForSuperMethod.ftl
+mill/ProtectedParserMethod.ftl
+parser/Lexer.ftl
+parser/LexerMember.ftl
+parser/Parser.ftl
+parser/ParserHeader.ftl
+scripts/BatchLauncher.ftl
+scripts/ShellLauncher.ftl
+tagging/coco/Check.ftl
+tagging/coco/Constructor.ftl
+tagging/coco/GetTraverser.ftl
+tagging/coco/IdentifierTraverser.ftl
+tagging/coco/VisitorConstructor.ftl
+tagging/itagger/AddTag.ftl
+tagging/itagger/GetTags.ftl
+tagging/itagger/GetTagsFromRepo.ftl
+tagging/itagger/RemoveTag.ftl
+tagging/tagger/AddTag.ftl
+tagging/tagger/AddTagSymbol.ftl
+tagging/tagger/FindTargetsBy.ftl
+tagging/tagger/GetArtifactScope.ftl
+tagging/tagger/GetInstance.ftl
+tagging/tagger/GetTags.ftl
+tagging/tagger/GetTagsSymbol.ftl
+tagging/tagger/IsIdentified.ftl
+tagging/tagger/RemoveTag.ftl
+vscode-plugin-templates/package.ftl
+vscode-plugin-templates/src/Extension.ftl
+vscode-plugin-templates/src/LspWrapper.ftl
+========================================================== Used USTemplates
+#Calls:   Template Name
+========================================================== Unused USTemplates
+========================================================== Explanation
+Used Templates: the list of standard template being used.
+Used USTemplates: the list of user specifc templates being used.
+- #Executions: how often the template was called/included
+Unused Templates: the list of templates which have not been executed
+Unused USTemplates: the list of user specifc templates which
+                    have not been executed.
+All lists are sorted
+(EOF)

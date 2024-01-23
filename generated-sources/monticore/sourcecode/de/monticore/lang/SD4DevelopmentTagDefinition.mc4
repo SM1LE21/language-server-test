@@ -1,0 +1,95 @@
+package de.monticore.lang;
+
+grammar SD4DevelopmentTagDefinition extends de.monticore.lang.SD4Development, de.monticore.tagging.Tags, de.monticore.lang.SDBasisTagDefinition, de.monticore.literals.MCCommonLiteralsTagDefinition, de.monticore.expressions.CommonExpressionsTagDefinition, de.monticore.ocl.OCLExpressionsTagDefinition, de.monticore.symbols.OOSymbolsTagDefinition {
+  /* DefaultIdent (using the Name) works too */
+  SDCallIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDCall "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDNewIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDNew "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDReturnIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDReturn "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDThrowIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDThrow "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDEndCallIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDEndCall "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDEndCallArrowIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDEndCallArrow "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDIncompleteExpressionIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDIncompleteExpression "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDClassIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDClass "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDConditionIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDCondition "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDVariableDeclarationIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDVariableDeclaration "]";
+
+  astrule SDCallIdentifier = 
+    method public String getIdentifies() {
+      return "SDCall";
+    }
+  ;
+  astrule SDNewIdentifier = 
+    method public String getIdentifies() {
+      return "SDNew";
+    }
+  ;
+  astrule SDReturnIdentifier = 
+    method public String getIdentifies() {
+      return "SDReturn";
+    }
+  ;
+  astrule SDThrowIdentifier = 
+    method public String getIdentifies() {
+      return "SDThrow";
+    }
+  ;
+  astrule SDEndCallIdentifier = 
+    method public String getIdentifies() {
+      return "SDEndCall";
+    }
+  ;
+  astrule SDEndCallArrowIdentifier = 
+    method public String getIdentifies() {
+      return "SDEndCallArrow";
+    }
+  ;
+  astrule SDIncompleteExpressionIdentifier = 
+    method public String getIdentifies() {
+      return "SDIncompleteExpression";
+    }
+  ;
+  astrule SDClassIdentifier = 
+    method public String getIdentifies() {
+      return "SDClass";
+    }
+  ;
+  astrule SDConditionIdentifier = 
+    method public String getIdentifies() {
+      return "SDCondition";
+    }
+  ;
+  astrule SDVariableDeclarationIdentifier = 
+    method public String getIdentifies() {
+      return "SDVariableDeclaration";
+    }
+  ;
+   start TagUnit;
+}

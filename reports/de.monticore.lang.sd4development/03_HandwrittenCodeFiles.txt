@@ -1,0 +1,13 @@
+========================================================== Used Handwritten Code Files
+#Counts   File Name
+2x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sd4development/_symboltable/SD4DevelopmentArtifactScope.java
+1x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sd4development/_symboltable/SD4DevelopmentScopesGenitor.java
+1x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sd4development/SD4DevelopmentTool.java
+1x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sd4development/_ast/ASTSDClass.java
+2x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sd4development/_symboltable/SD4DevelopmentSymbols2Json.java
+1x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sd4development/_parser/SD4DevelopmentParser.java
+2x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sd4development/_symboltable/SD4DevelopmentGlobalScope.java
+========================================================== Unused Handwritten Code Files
+========================================================== Explanation
+   - Shows used and unused HWC files
+(EOF)

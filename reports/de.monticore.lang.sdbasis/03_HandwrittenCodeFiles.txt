@@ -1,0 +1,12 @@
+========================================================== Used Handwritten Code Files
+#Counts   File Name
+1x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sdbasis/_ast/ASTSDSource.java
+1x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sdbasis/_ast/ASTSDObjectTarget.java
+1x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sdbasis/_ast/ASTSDObjectSource.java
+1x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sdbasis/_symboltable/SDBasisScopesGenitor.java
+1x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sdbasis/_ast/ASTSDArtifact.java
+1x        /Users/tunkeltesch/Documents/BachelorRepositories/sdMonticore/sequence-diagram/src/main/java/de/monticore/lang/sdbasis/_ast/ASTSDTarget.java
+========================================================== Unused Handwritten Code Files
+========================================================== Explanation
+   - Shows used and unused HWC files
+(EOF)

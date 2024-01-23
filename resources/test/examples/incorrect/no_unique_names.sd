@@ -1,0 +1,17 @@
+/* (c) https://github.com/MontiCore/monticore */
+
+package examples.incorrect;
+
+sequencediagram sd_test {
+
+  o: BiddingPolicy;
+  c: BiddingPolicy;
+  // : SomeClass;
+  o: BiddingPolicy;  //violation
+  // : SomeClass;    //violation
+  b: BiddingPolicy;
+
+  // Inline definitions
+  // o -> (c:C) : new C(...);        // Violation
+  // o -> (:SomeClass) : new SomeClass(...);  // Violation
+}

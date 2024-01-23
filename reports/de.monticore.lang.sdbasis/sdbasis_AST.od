@@ -1,0 +1,579 @@
+/*
+ * ========================================================== Object diagram
+ */
+objectdiagram sdbasis_AST {
+  @SDBasis!MCGrammar(2,0):ASTMCGrammar {
+    symbol = @SDBasis!Symbol(2,0);
+    enclosingScope = @SDBasis!ArtifactScope;
+    spanningScope = @SDBasis!Scope;
+    r__package = [de, monticore, lang];
+    name = SDBasis;
+    supergrammar = [// *size: 4
+      @MCBasicTypes!GrammarReference(36,18):ASTGrammarReference {
+        enclosingScope = @SDBasis!Scope;
+        names = [de, monticore, types, MCBasicTypes];
+      },
+      @BasicSymbols!GrammarReference(37,18):ASTGrammarReference {
+        enclosingScope = @SDBasis!Scope;
+        names = [de, monticore, symbols, BasicSymbols];
+      },
+      @ExpressionsBasis!GrammarReference(38,18):ASTGrammarReference {
+        enclosingScope = @SDBasis!Scope;
+        names = [de, monticore, expressions, ExpressionsBasis];
+      },
+      @UMLStereotype!GrammarReference(39,18):ASTGrammarReference {
+        enclosingScope = @SDBasis!Scope;
+        names = [de, monticore, UMLStereotype];
+      }];
+    classProds = [// *size: 12
+      @SDArtifact!ClassProd(46,2):ASTClassProd {
+        enclosingScope = @SDBasis!Scope;
+        alts = [// *size: 1
+          @!Alt(47,4):ASTAlt {
+            enclosingScope = @SDArtifact!Scope;
+            component = [// *size: 3
+              @!Block(47,4):ASTBlock {
+                enclosingScope = @SDArtifact!Scope;
+                alt = [// *size: 1
+                  @!Alt(47,5):ASTAlt {
+                    enclosingScope = @SDArtifact!Scope;
+                    component = [// *size: 3
+                      @package!Terminal(47,5):ASTTerminal {
+                        enclosingScope = @SDArtifact!Scope;
+                        iteration = 0;
+                        name = package;
+                      },
+                      @MCQualifiedName!NonTerminal(47,15):ASTNonTerminal {
+                        enclosingScope = @SDArtifact!Scope;
+                        usageName = "packageDeclaration";
+                        name = MCQualifiedName;
+                        genSymbol = false;
+                        plusKeywords = true;
+                        iteration = 0;
+                      },
+                      @SEMI!Terminal(47,51):ASTTerminal {
+                        enclosingScope = @SDArtifact!Scope;
+                        iteration = 0;
+                        name = ;;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 17;
+              },
+              @MCImportStatement!NonTerminal(48,4):ASTNonTerminal {
+                enclosingScope = @SDArtifact!Scope;
+                name = MCImportStatement;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 21;
+              },
+              @SequenceDiagram!NonTerminal(49,4):ASTNonTerminal {
+                enclosingScope = @SDArtifact!Scope;
+                name = SequenceDiagram;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = SDArtifact;
+      },
+      @SequenceDiagram!ClassProd(56,2):ASTClassProd {
+        enclosingScope = @SDBasis!Scope;
+        superInterfaceRule = [// *size: 1
+          @Diagram!RuleReference(56,29):ASTRuleReference {
+            enclosingScope = @SequenceDiagram!Scope;
+            name = Diagram;
+          }];
+        alts = [// *size: 1
+          @!Alt(57,4):ASTAlt {
+            enclosingScope = @SequenceDiagram!Scope;
+            component = [// *size: 8
+              @Stereotype!NonTerminal(57,4):ASTNonTerminal {
+                enclosingScope = @SequenceDiagram!Scope;
+                name = Stereotype;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 17;
+              },
+              @SDModifier!NonTerminal(57,16):ASTNonTerminal {
+                enclosingScope = @SequenceDiagram!Scope;
+                name = SDModifier;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 21;
+              },
+              @sequencediagram!Terminal(57,28):ASTTerminal {
+                enclosingScope = @SequenceDiagram!Scope;
+                iteration = 0;
+                name = sequencediagram;
+              },
+              @Name!NonTerminal(57,46):ASTNonTerminal {
+                enclosingScope = @SequenceDiagram!Scope;
+                name = Name;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @LCURLY!Terminal(57,51):ASTTerminal {
+                enclosingScope = @SequenceDiagram!Scope;
+                iteration = 0;
+                name = {;
+              },
+              @SDObject!NonTerminal(58,6):ASTNonTerminal {
+                enclosingScope = @SequenceDiagram!Scope;
+                name = SDObject;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 21;
+              },
+              @SDBody!NonTerminal(59,6):ASTNonTerminal {
+                enclosingScope = @SequenceDiagram!Scope;
+                name = SDBody;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @RCURLY!Terminal(60,4):ASTTerminal {
+                enclosingScope = @SequenceDiagram!Scope;
+                iteration = 0;
+                name = };
+              }];
+            rightAssoc = false;
+          }];
+        name = SequenceDiagram;
+      },
+      @SDBody!ClassProd(68,2):ASTClassProd {
+        enclosingScope = @SDBasis!Scope;
+        symbolDefinitions = [// *size: 1
+          @!SymbolDefinition(68,2):ASTSymbolDefinition {
+            enclosingScope = @SDBody!Scope;
+            genSymbol = false;
+            genScope = true;
+            shadowing = false;
+            non_exporting = false;
+            ordered = false;
+          }];
+        alts = [// *size: 1
+          @!Alt(68,17):ASTAlt {
+            enclosingScope = @SDBody!Scope;
+            component = [// *size: 1
+              @SDElement!NonTerminal(68,17):ASTNonTerminal {
+                enclosingScope = @SDBody!Scope;
+                name = SDElement;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 21;
+              }];
+            rightAssoc = false;
+          }];
+        name = SDBody;
+      },
+      @SDCompleteModifier!ClassProd(83,3):ASTClassProd {
+        enclosingScope = @SDBasis!Scope;
+        superInterfaceRule = [// *size: 1
+          @SDModifier!RuleReference(83,33):ASTRuleReference {
+            enclosingScope = @SDCompleteModifier!Scope;
+            name = SDModifier;
+          }];
+        alts = [// *size: 2
+          @!Alt(84,5):ASTAlt {
+            enclosingScope = @SDCompleteModifier!Scope;
+            component = [// *size: 4
+              @!SemanticpredicateOrAction(84,5):ASTSemanticpredicateOrAction {
+                enclosingScope = @SDCompleteModifier!Scope;
+                expressionPredicate = @!ExpressionPredicate(84,6):ASTExpressionPredicate {
+                  enclosingScope = @SDCompleteModifier!Scope;
+                  expression = @!CallExpression(84,13):ASTCallExpression {
+                    enclosingScope = @SDCompleteModifier!Scope;
+                    expression = @!NameExpression(84,6):ASTNameExpression {
+                      enclosingScope = @SDCompleteModifier!Scope;
+                      name = noSpace;
+                    };
+                    arguments = @!Arguments(84,13):ASTArguments {
+                      enclosingScope = @SDCompleteModifier!Scope;
+                      expressions = [// *size: 2
+                        @!LiteralExpression(84,14):ASTLiteralExpression {
+                          enclosingScope = @SDCompleteModifier!Scope;
+                          literal = @!NatLiteral(84,14):ASTNatLiteral {
+                            enclosingScope = @SDCompleteModifier!Scope;
+                            digits = 2;
+                          };
+                        },
+                        @!LiteralExpression(84,16):ASTLiteralExpression {
+                          enclosingScope = @SDCompleteModifier!Scope;
+                          literal = @!NatLiteral(84,16):ASTNatLiteral {
+                            enclosingScope = @SDCompleteModifier!Scope;
+                            digits = 3;
+                          };
+                        }];
+                    };
+                  };
+                };
+                predicate = true;
+              },
+              @LPAREN!Terminal(84,21):ASTTerminal {
+                enclosingScope = @SDCompleteModifier!Scope;
+                iteration = 0;
+                name = (;
+              },
+              @c!KeyTerminal(84,25):ASTKeyTerminal {
+                enclosingScope = @SDCompleteModifier!Scope;
+                keyConstant = @!KeyConstant(84,25):ASTKeyConstant {
+                  enclosingScope = @SDCompleteModifier!Scope;
+                  strings = [c];
+                };
+                iteration = 0;
+                name = c;
+              },
+              @RPAREN!Terminal(84,34):ASTTerminal {
+                enclosingScope = @SDCompleteModifier!Scope;
+                iteration = 0;
+                name = );
+              }];
+            rightAssoc = false;
+          },
+          @!Alt(84,40):ASTAlt {
+            enclosingScope = @SDCompleteModifier!Scope;
+            component = [// *size: 1
+              @complete!KeyTerminal(84,40):ASTKeyTerminal {
+                enclosingScope = @SDCompleteModifier!Scope;
+                keyConstant = @!KeyConstant(84,40):ASTKeyConstant {
+                  enclosingScope = @SDCompleteModifier!Scope;
+                  strings = [complete];
+                };
+                iteration = 0;
+                name = complete;
+              }];
+            rightAssoc = false;
+          }];
+        name = SDCompleteModifier;
+      },
+      @SDFreeModifier!ClassProd(89,3):ASTClassProd {
+        enclosingScope = @SDBasis!Scope;
+        superInterfaceRule = [// *size: 1
+          @SDModifier!RuleReference(89,29):ASTRuleReference {
+            enclosingScope = @SDFreeModifier!Scope;
+            name = SDModifier;
+          }];
+        alts = [// *size: 2
+          @!Alt(90,5):ASTAlt {
+            enclosingScope = @SDFreeModifier!Scope;
+            component = [// *size: 1
+              @POINTPOINTPOINT!Terminal(90,5):ASTTerminal {
+                enclosingScope = @SDFreeModifier!Scope;
+                iteration = 0;
+                name = ...;
+              }];
+            rightAssoc = false;
+          },
+          @!Alt(90,13):ASTAlt {
+            enclosingScope = @SDFreeModifier!Scope;
+            component = [// *size: 1
+              @free!KeyTerminal(90,13):ASTKeyTerminal {
+                enclosingScope = @SDFreeModifier!Scope;
+                keyConstant = @!KeyConstant(90,13):ASTKeyConstant {
+                  enclosingScope = @SDFreeModifier!Scope;
+                  strings = [free];
+                };
+                iteration = 0;
+                name = free;
+              }];
+            rightAssoc = false;
+          }];
+        name = SDFreeModifier;
+      },
+      @SDInitialModifier!ClassProd(95,3):ASTClassProd {
+        enclosingScope = @SDBasis!Scope;
+        superInterfaceRule = [// *size: 1
+          @SDModifier!RuleReference(95,32):ASTRuleReference {
+            enclosingScope = @SDInitialModifier!Scope;
+            name = SDModifier;
+          }];
+        alts = [// *size: 1
+          @!Alt(96,5):ASTAlt {
+            enclosingScope = @SDInitialModifier!Scope;
+            component = [// *size: 1
+              @initial!KeyTerminal(96,5):ASTKeyTerminal {
+                enclosingScope = @SDInitialModifier!Scope;
+                keyConstant = @!KeyConstant(96,5):ASTKeyConstant {
+                  enclosingScope = @SDInitialModifier!Scope;
+                  strings = [initial];
+                };
+                iteration = 0;
+                name = initial;
+              }];
+            rightAssoc = false;
+          }];
+        name = SDInitialModifier;
+      },
+      @SDVisibleModifier!ClassProd(101,3):ASTClassProd {
+        enclosingScope = @SDBasis!Scope;
+        superInterfaceRule = [// *size: 1
+          @SDModifier!RuleReference(101,32):ASTRuleReference {
+            enclosingScope = @SDVisibleModifier!Scope;
+            name = SDModifier;
+          }];
+        alts = [// *size: 1
+          @!Alt(102,5):ASTAlt {
+            enclosingScope = @SDVisibleModifier!Scope;
+            component = [// *size: 1
+              @visible!KeyTerminal(102,5):ASTKeyTerminal {
+                enclosingScope = @SDVisibleModifier!Scope;
+                keyConstant = @!KeyConstant(102,5):ASTKeyConstant {
+                  enclosingScope = @SDVisibleModifier!Scope;
+                  strings = [visible];
+                };
+                iteration = 0;
+                name = visible;
+              }];
+            rightAssoc = false;
+          }];
+        name = SDVisibleModifier;
+      },
+      @SDObject!ClassProd(114,2):ASTClassProd {
+        enclosingScope = @SDBasis!Scope;
+        superInterfaceRule = [// *size: 1
+          @Variable!RuleReference(114,22):ASTRuleReference {
+            enclosingScope = @SDObject!Scope;
+            name = Variable;
+          }];
+        alts = [// *size: 1
+          @!Alt(115,4):ASTAlt {
+            enclosingScope = @SDObject!Scope;
+            component = [// *size: 5
+              @Stereotype!NonTerminal(115,4):ASTNonTerminal {
+                enclosingScope = @SDObject!Scope;
+                name = Stereotype;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 17;
+              },
+              @SDModifier!NonTerminal(115,16):ASTNonTerminal {
+                enclosingScope = @SDObject!Scope;
+                name = SDModifier;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 21;
+              },
+              @Name!NonTerminal(115,28):ASTNonTerminal {
+                enclosingScope = @SDObject!Scope;
+                name = Name;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @!Block(115,33):ASTBlock {
+                enclosingScope = @SDObject!Scope;
+                alt = [// *size: 1
+                  @!Alt(115,34):ASTAlt {
+                    enclosingScope = @SDObject!Scope;
+                    component = [// *size: 2
+                      @COLON!Terminal(115,34):ASTTerminal {
+                        enclosingScope = @SDObject!Scope;
+                        iteration = 0;
+                        name = :;
+                      },
+                      @MCObjectType!NonTerminal(115,38):ASTNonTerminal {
+                        enclosingScope = @SDObject!Scope;
+                        name = MCObjectType;
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 17;
+              },
+              @SEMI!Terminal(115,53):ASTTerminal {
+                enclosingScope = @SDObject!Scope;
+                iteration = 0;
+                name = ;;
+              }];
+            rightAssoc = false;
+          }];
+        name = SDObject;
+      },
+      @SDObjectSource!ClassProd(132,2):ASTClassProd {
+        enclosingScope = @SDBasis!Scope;
+        superInterfaceRule = [// *size: 1
+          @SDSource!RuleReference(132,28):ASTRuleReference {
+            enclosingScope = @SDObjectSource!Scope;
+            name = SDSource;
+          }];
+        alts = [// *size: 1
+          @!Alt(132,39):ASTAlt {
+            enclosingScope = @SDObjectSource!Scope;
+            component = [// *size: 1
+              @Name!NonTerminal(132,39):ASTNonTerminal {
+                enclosingScope = @SDObjectSource!Scope;
+                name = Name;
+                referencedSymbol = "Variable";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = SDObjectSource;
+      },
+      @SDObjectTarget!ClassProd(138,2):ASTClassProd {
+        enclosingScope = @SDBasis!Scope;
+        superInterfaceRule = [// *size: 1
+          @SDTarget!RuleReference(138,28):ASTRuleReference {
+            enclosingScope = @SDObjectTarget!Scope;
+            name = SDTarget;
+          }];
+        alts = [// *size: 1
+          @!Alt(138,39):ASTAlt {
+            enclosingScope = @SDObjectTarget!Scope;
+            component = [// *size: 1
+              @Name!NonTerminal(138,39):ASTNonTerminal {
+                enclosingScope = @SDObjectTarget!Scope;
+                name = Name;
+                referencedSymbol = "Variable";
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = SDObjectTarget;
+      },
+      @SDSendMessage!ClassProd(152,2):ASTClassProd {
+        enclosingScope = @SDBasis!Scope;
+        superInterfaceRule = [// *size: 1
+          @SDInteraction!RuleReference(152,27):ASTRuleReference {
+            enclosingScope = @SDSendMessage!Scope;
+            name = SDInteraction;
+          }];
+        alts = [// *size: 1
+          @!Alt(153,4):ASTAlt {
+            enclosingScope = @SDSendMessage!Scope;
+            component = [// *size: 6
+              @SDSource!NonTerminal(153,4):ASTNonTerminal {
+                enclosingScope = @SDSendMessage!Scope;
+                name = SDSource;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 17;
+              },
+              @MINUSGT!Terminal(153,14):ASTTerminal {
+                enclosingScope = @SDSendMessage!Scope;
+                iteration = 0;
+                name = ->;
+              },
+              @SDTarget!NonTerminal(153,19):ASTNonTerminal {
+                enclosingScope = @SDSendMessage!Scope;
+                name = SDTarget;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 17;
+              },
+              @COLON!Terminal(153,29):ASTTerminal {
+                enclosingScope = @SDSendMessage!Scope;
+                iteration = 0;
+                name = :;
+              },
+              @SDAction!NonTerminal(153,33):ASTNonTerminal {
+                enclosingScope = @SDSendMessage!Scope;
+                name = SDAction;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 0;
+              },
+              @!Block(153,42):ASTBlock {
+                enclosingScope = @SDSendMessage!Scope;
+                alt = [// *size: 2
+                  @!Alt(153,43):ASTAlt {
+                    enclosingScope = @SDSendMessage!Scope;
+                    component = [// *size: 1
+                      @SEMI!Terminal(153,43):ASTTerminal {
+                        enclosingScope = @SDSendMessage!Scope;
+                        iteration = 0;
+                        name = ;;
+                      }];
+                    rightAssoc = false;
+                  },
+                  @!Alt(153,49):ASTAlt {
+                    enclosingScope = @SDSendMessage!Scope;
+                    component = [// *size: 1
+                      @SDActivityBar!NonTerminal(153,49):ASTNonTerminal {
+                        enclosingScope = @SDSendMessage!Scope;
+                        name = SDActivityBar;
+                        genSymbol = false;
+                        plusKeywords = false;
+                        iteration = 0;
+                      }];
+                    rightAssoc = false;
+                  }];
+                iteration = 0;
+              }];
+            rightAssoc = false;
+          }];
+        name = SDSendMessage;
+      },
+      @SDActivityBar!ClassProd(160,2):ASTClassProd {
+        enclosingScope = @SDBasis!Scope;
+        alts = [// *size: 1
+          @!Alt(160,18):ASTAlt {
+            enclosingScope = @SDActivityBar!Scope;
+            component = [// *size: 3
+              @LCURLY!Terminal(160,18):ASTTerminal {
+                enclosingScope = @SDActivityBar!Scope;
+                iteration = 0;
+                name = {;
+              },
+              @SDElement!NonTerminal(160,22):ASTNonTerminal {
+                enclosingScope = @SDActivityBar!Scope;
+                name = SDElement;
+                genSymbol = false;
+                plusKeywords = false;
+                iteration = 21;
+              },
+              @RCURLY!Terminal(160,33):ASTTerminal {
+                enclosingScope = @SDActivityBar!Scope;
+                iteration = 0;
+                name = };
+              }];
+            rightAssoc = false;
+          }];
+        name = SDActivityBar;
+      }];
+    interfaceProds = [// *size: 6
+      @SDModifier!InterfaceProd(78,3):ASTInterfaceProd {
+        enclosingScope = @SDBasis!Scope;
+        name = SDModifier;
+      },
+      @SDElement!InterfaceProd(121,2):ASTInterfaceProd {
+        enclosingScope = @SDBasis!Scope;
+        name = SDElement;
+      },
+      @SDInteraction!InterfaceProd(126,2):ASTInterfaceProd {
+        enclosingScope = @SDBasis!Scope;
+        superInterfaceRule = [// *size: 1
+          @SDElement!RuleReference(126,34):ASTRuleReference {
+            enclosingScope = @SDInteraction!Scope;
+            name = SDElement;
+          }];
+        name = SDInteraction;
+      },
+      @SDSource!InterfaceProd(131,2):ASTInterfaceProd {
+        enclosingScope = @SDBasis!Scope;
+        name = SDSource;
+      },
+      @SDTarget!InterfaceProd(137,2):ASTInterfaceProd {
+        enclosingScope = @SDBasis!Scope;
+        name = SDTarget;
+      },
+      @SDAction!InterfaceProd(145,2):ASTInterfaceProd {
+        enclosingScope = @SDBasis!Scope;
+        name = SDAction;
+      }];
+    component = true;
+};}
+
+/*
+ * ========================================================== Explanation
+ * Shows the AST with all attributes as object diagram
+ */

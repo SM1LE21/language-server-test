@@ -1,0 +1,41 @@
+package de.monticore.lang;
+
+component grammar SDBasisTagSchema extends de.monticore.tagging.TagSchema, de.monticore.types.MCBasicTypesTagSchema, de.monticore.symbols.BasicSymbolsTagSchema, de.monticore.expressions.ExpressionsBasisTagSchema, de.monticore.UMLStereotypeTagSchema {
+  SDArtifactSchemaIdentifier implements ScopeIdentifier =
+    "SDArtifact";
+
+  SequenceDiagramSchemaIdentifier implements ScopeIdentifier =
+    "SequenceDiagram";
+
+  SDBodySchemaIdentifier implements ScopeIdentifier =
+    "SDBody";
+
+  SDCompleteModifierSchemaIdentifier implements ScopeIdentifier =
+    "SDCompleteModifier";
+
+  SDFreeModifierSchemaIdentifier implements ScopeIdentifier =
+    "SDFreeModifier";
+
+  SDInitialModifierSchemaIdentifier implements ScopeIdentifier =
+    "SDInitialModifier";
+
+  SDVisibleModifierSchemaIdentifier implements ScopeIdentifier =
+    "SDVisibleModifier";
+
+  SDObjectSchemaIdentifier implements ScopeIdentifier =
+    "SDObject";
+
+  SDObjectSourceSchemaIdentifier implements ScopeIdentifier =
+    "SDObjectSource";
+
+  SDObjectTargetSchemaIdentifier implements ScopeIdentifier =
+    "SDObjectTarget";
+
+  SDSendMessageSchemaIdentifier implements ScopeIdentifier =
+    "SDSendMessage";
+
+  SDActivityBarSchemaIdentifier implements ScopeIdentifier =
+    "SDActivityBar";
+
+   start TagSchema;
+}

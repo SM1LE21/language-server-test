@@ -1,0 +1,113 @@
+package de.monticore.lang;
+
+component grammar SDBasisTagDefinition extends de.monticore.lang.SDBasis, de.monticore.tagging.Tags, de.monticore.types.MCBasicTypesTagDefinition, de.monticore.symbols.BasicSymbolsTagDefinition, de.monticore.expressions.ExpressionsBasisTagDefinition, de.monticore.UMLStereotypeTagDefinition {
+  /* DefaultIdent (using the Name) works too */
+  SDArtifactIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDArtifact "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SequenceDiagramIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SequenceDiagram "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDBodyIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDBody "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDCompleteModifierIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDCompleteModifier "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDFreeModifierIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDFreeModifier "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDInitialModifierIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDInitialModifier "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDVisibleModifierIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDVisibleModifier "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDObjectIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDObject "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDObjectSourceIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDObjectSource "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDObjectTargetIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDObjectTarget "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDSendMessageIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDSendMessage "]";
+
+  /* DefaultIdent (using the Name) works too */
+  SDActivityBarIdentifier implements ModelElementIdentifier =
+    "[" identifiesElement:SDActivityBar "]";
+
+  astrule SDArtifactIdentifier = 
+    method public String getIdentifies() {
+      return "SDArtifact";
+    }
+  ;
+  astrule SequenceDiagramIdentifier = 
+    method public String getIdentifies() {
+      return "SequenceDiagram";
+    }
+  ;
+  astrule SDBodyIdentifier = 
+    method public String getIdentifies() {
+      return "SDBody";
+    }
+  ;
+  astrule SDCompleteModifierIdentifier = 
+    method public String getIdentifies() {
+      return "SDCompleteModifier";
+    }
+  ;
+  astrule SDFreeModifierIdentifier = 
+    method public String getIdentifies() {
+      return "SDFreeModifier";
+    }
+  ;
+  astrule SDInitialModifierIdentifier = 
+    method public String getIdentifies() {
+      return "SDInitialModifier";
+    }
+  ;
+  astrule SDVisibleModifierIdentifier = 
+    method public String getIdentifies() {
+      return "SDVisibleModifier";
+    }
+  ;
+  astrule SDObjectIdentifier = 
+    method public String getIdentifies() {
+      return "SDObject";
+    }
+  ;
+  astrule SDObjectSourceIdentifier = 
+    method public String getIdentifies() {
+      return "SDObjectSource";
+    }
+  ;
+  astrule SDObjectTargetIdentifier = 
+    method public String getIdentifies() {
+      return "SDObjectTarget";
+    }
+  ;
+  astrule SDSendMessageIdentifier = 
+    method public String getIdentifies() {
+      return "SDSendMessage";
+    }
+  ;
+  astrule SDActivityBarIdentifier = 
+    method public String getIdentifies() {
+      return "SDActivityBar";
+    }
+  ;
+   start TagUnit;
+}

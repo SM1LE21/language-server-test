@@ -1,0 +1,8 @@
+========================================================== Generated Files
+Filename                                AST-Node
+package.json                            unknown
+                                        ftl.ftl
+Extension.ts                            unknown(!2)
+                                        ftl.ftl
+SDBasisLspWrapper.ts                    unknown(!3)
+                                        ftl.ftl

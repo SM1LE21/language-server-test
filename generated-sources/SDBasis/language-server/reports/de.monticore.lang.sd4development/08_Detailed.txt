@@ -1,0 +1,229 @@
+========================================================== Detailed Report
++tpl(1T)   DocumentInformationProvider.ftl    unknown
+-tpl(1T)   DocumentInformationProvider.ftl    unknown
++file      SDBasisDocumentInformationProvider.java unknown
+           DocumentInformationProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisDocumentInformationProvider.java DocumentInformationProvider.ftl
+           unknown
++tpl(1T)   LanguageServerCLI.ftl              unknown(!2)
+-tpl(1T)   LanguageServerCLI.ftl              unknown(!2)
++file      SDBasisLanguageServerCLI.java      unknown(!2)
+           LanguageServerCLI.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisLanguageServerCLI.java LanguageServerCLI.ftl
+           unknown(!2)
++tpl(1T)   LanguageServer.ftl                 unknown(!3)
+-tpl(1T)   LanguageServer.ftl                 unknown(!3)
++file      SDBasisLanguageServer.java         unknown(!3)
+           LanguageServer.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisLanguageServer.java LanguageServer.ftl
+           unknown(!3)
++tpl(1T)   LanguageServerContext.ftl          unknown(!4)
+-tpl(1T)   LanguageServerContext.ftl          unknown(!4)
++file      SDBasisLanguageServerContext.java  unknown(!4)
+           LanguageServerContext.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisLanguageServerContext.java LanguageServerContext.ftl
+           unknown(!4)
++tpl(1T)   LanguageServerBuilder.ftl          unknown(!5)
+-tpl(1T)   LanguageServerBuilder.ftl          unknown(!5)
++file      SDBasisLanguageServerBuilder.java  unknown(!5)
+           LanguageServerBuilder.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisLanguageServerBuilder.java LanguageServerBuilder.ftl
+           unknown(!5)
++tpl(1T)   TextDocumentService.ftl            unknown(!6)
+-tpl(1T)   TextDocumentService.ftl            unknown(!6)
++file      SDBasisTextDocumentService.java    unknown(!6)
+           TextDocumentService.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisTextDocumentService.java TextDocumentService.ftl
+           unknown(!6)
++tpl(1T)   WorkspaceService.ftl               unknown(!7)
+-tpl(1T)   WorkspaceService.ftl               unknown(!7)
++file      SDBasisWorkspaceService.java       unknown(!7)
+           WorkspaceService.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisWorkspaceService.java WorkspaceService.ftl
+           unknown(!7)
++tpl(1T)   SyntaxHighlightingService.ftl      unknown(!8)
+-tpl(1T)   SyntaxHighlightingService.ftl      unknown(!8)
++file      SDBasisSyntaxHighlightingService.java unknown(!8)
+           SyntaxHighlightingService.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisSyntaxHighlightingService.java SyntaxHighlightingService.ftl
+           unknown(!8)
++tpl(1T)   LspAntlrParser.ftl                 unknown(!9)
+-tpl(1T)   LspAntlrParser.ftl                 unknown(!9)
++file      SDBasisLspAntlrParser.java         unknown(!9)
+           LspAntlrParser.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisLspAntlrParser.java LspAntlrParser.ftl
+           unknown(!9)
++tpl(1T)   LspAntlrLexer.ftl                  unknown(!10)
+-tpl(1T)   LspAntlrLexer.ftl                  unknown(!10)
++file      SDBasisLspAntlrLexer.java          unknown(!10)
+           LspAntlrLexer.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisLspAntlrLexer.java LspAntlrLexer.ftl
+           unknown(!10)
++tpl(1T)   IndexingManager.ftl                unknown(!11)
+-tpl(1T)   IndexingManager.ftl                unknown(!11)
++file      SDBasisIndexingManager.java        unknown(!11)
+           IndexingManager.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisIndexingManager.java IndexingManager.ftl
+           unknown(!11)
++tpl(1T)   DocumentInformationFilter.ftl      unknown(!12)
+-tpl(1T)   DocumentInformationFilter.ftl      unknown(!12)
++file      SDBasisDocumentInformationFilter.java unknown(!12)
+           DocumentInformationFilter.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisDocumentInformationFilter.java DocumentInformationFilter.ftl
+           unknown(!12)
++tpl(1T)   SymbolUsageResolutionProvider.ftl  unknown(!13)
+-tpl(1T)   SymbolUsageResolutionProvider.ftl  unknown(!13)
++file      SDBasisSymbolUsageResolutionProvider.java unknown(!13)
+           SymbolUsageResolutionProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.SDBasisSymbolUsageResolutionProvider.java SymbolUsageResolutionProvider.ftl
+           unknown(!13)
++tpl(1T)   LanguageAccess.ftl                 unknown(!14)
+-tpl(1T)   LanguageAccess.ftl                 unknown(!14)
++file      SDBasisLanguageAccess.java         unknown(!14)
+           LanguageAccess.ftl
+-file      de.monticore.lang.sdbasis._lsp.language_access.SDBasisLanguageAccess.java LanguageAccess.ftl
+           unknown(!14)
++tpl(1T)   LspCoCoRunner.ftl                  unknown(!15)
+-tpl(1T)   LspCoCoRunner.ftl                  unknown(!15)
++file      SDBasisLspCoCoRunner.java          unknown(!15)
+           LspCoCoRunner.ftl
+-file      de.monticore.lang.sdbasis._lsp.language_access.SDBasisLspCoCoRunner.java LspCoCoRunner.ftl
+           unknown(!15)
++tpl(1T)   ScopeManager.ftl                   unknown(!16)
+-tpl(1T)   ScopeManager.ftl                   unknown(!16)
++file      SDBasisScopeManager.java           unknown(!16)
+           ScopeManager.ftl
+-file      de.monticore.lang.sdbasis._lsp.language_access.SDBasisScopeManager.java ScopeManager.ftl
+           unknown(!16)
++tpl(1T)   ArtifactScopeWithFindings.ftl      unknown(!17)
+-tpl(1T)   ArtifactScopeWithFindings.ftl      unknown(!17)
++file      SDBasisArtifactScopeWithFindings.java unknown(!17)
+           ArtifactScopeWithFindings.ftl
+-file      de.monticore.lang.sdbasis._lsp.language_access.SDBasisArtifactScopeWithFindings.java ArtifactScopeWithFindings.ftl
+           unknown(!17)
++tpl(1T)   DiagnosticsProvider.ftl            unknown(!18)
+-tpl(1T)   DiagnosticsProvider.ftl            unknown(!18)
++file      SDBasisDiagnosticsProvider.java    unknown(!18)
+           DiagnosticsProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.diagnostics.SDBasisDiagnosticsProvider.java DiagnosticsProvider.ftl
+           unknown(!18)
++tpl(1T)   CodeActionProvider.ftl             unknown(!19)
+-tpl(1T)   CodeActionProvider.ftl             unknown(!19)
++file      SDBasisCodeActionProvider.java     unknown(!19)
+           CodeActionProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.code_action.SDBasisCodeActionProvider.java CodeActionProvider.ftl
+           unknown(!19)
++tpl(1T)   PrepareRenameProvider.ftl          unknown(!20)
+-tpl(1T)   PrepareRenameProvider.ftl          unknown(!20)
++file      SDBasisPrepareRenameProvider.java  unknown(!20)
+           PrepareRenameProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.rename.SDBasisPrepareRenameProvider.java PrepareRenameProvider.ftl
+           unknown(!20)
++tpl(1T)   RenameProvider.ftl                 unknown(!21)
+-tpl(1T)   RenameProvider.ftl                 unknown(!21)
++file      SDBasisRenameProvider.java         unknown(!21)
+           RenameProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.rename.SDBasisRenameProvider.java RenameProvider.ftl
+           unknown(!21)
++tpl(1T)   LexerProvider.ftl                  unknown(!22)
+-tpl(1T)   LexerProvider.ftl                  unknown(!22)
++file      SDBasisLexerProvider.java          unknown(!22)
+           LexerProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.syntax_highlighting.SDBasisLexerProvider.java LexerProvider.ftl
+           unknown(!22)
++tpl(1T)   SemanticTokensProvider.ftl         unknown(!23)
+-tpl(1T)   SemanticTokensProvider.ftl         unknown(!23)
++file      SDBasisSemanticTokensProvider.java unknown(!23)
+           SemanticTokensProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.syntax_highlighting.SDBasisSemanticTokensProvider.java SemanticTokensProvider.ftl
+           unknown(!23)
++tpl(1T)   CompletionAntlrParser.ftl          unknown(!24)
+-tpl(1T)   CompletionAntlrParser.ftl          unknown(!24)
++file      SDBasisCompletionAntlrParser.java  unknown(!24)
+           CompletionAntlrParser.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.completion.SDBasisCompletionAntlrParser.java CompletionAntlrParser.ftl
+           unknown(!24)
++tpl(1T)   CompletionProvider.ftl             unknown(!25)
+-tpl(1T)   CompletionProvider.ftl             unknown(!25)
++file      SDBasisCompletionProvider.java     unknown(!25)
+           CompletionProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.completion.SDBasisCompletionProvider.java CompletionProvider.ftl
+           unknown(!25)
++tpl(1T)   ExpectedTokenVisitor.ftl           unknown(!26)
+-tpl(1T)   ExpectedTokenVisitor.ftl           unknown(!26)
++file      SDBasisExpectedTokenVisitor.java   unknown(!26)
+           ExpectedTokenVisitor.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.completion.SDBasisExpectedTokenVisitor.java ExpectedTokenVisitor.ftl
+           unknown(!26)
++tpl(1T)   SymbolCollection.ftl               unknown(!27)
+-tpl(1T)   SymbolCollection.ftl               unknown(!27)
++file      SDBasisSymbolCollection.java       unknown(!27)
+           SymbolCollection.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.completion.SDBasisSymbolCollection.java SymbolCollection.ftl
+           unknown(!27)
++tpl(1T)   SymbolCollector.ftl                unknown(!28)
+-tpl(1T)   SymbolCollector.ftl                unknown(!28)
++file      SDBasisSymbolCollector.java        unknown(!28)
+           SymbolCollector.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.completion.SDBasisSymbolCollector.java SymbolCollector.ftl
+           unknown(!28)
++tpl(1T)   DefaultCompletionStrategy.ftl      unknown(!29)
+-tpl(1T)   DefaultCompletionStrategy.ftl      unknown(!29)
++file      SDBasisDefaultCompletionStrategy.java unknown(!29)
+           DefaultCompletionStrategy.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.completion.strategy.SDBasisDefaultCompletionStrategy.java DefaultCompletionStrategy.ftl
+           unknown(!29)
++tpl(1T)   DefinitionProvider.ftl             unknown(!30)
+-tpl(1T)   DefinitionProvider.ftl             unknown(!30)
++file      SDBasisDefinitionProvider.java     unknown(!30)
+           DefinitionProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.definition.SDBasisDefinitionProvider.java DefinitionProvider.ftl
+           unknown(!30)
++tpl(1T)   HoverProvider.ftl                  unknown(!31)
+-tpl(1T)   HoverProvider.ftl                  unknown(!31)
++file      SDBasisHoverProvider.java          unknown(!31)
+           HoverProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.hover.SDBasisHoverProvider.java HoverProvider.ftl
+           unknown(!31)
++tpl(1T)   DocumentSymbolProvider.ftl         unknown(!32)
+-tpl(1T)   DocumentSymbolProvider.ftl         unknown(!32)
++file      SDBasisDocumentSymbolProvider.java unknown(!32)
+           DocumentSymbolProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.symbols.SDBasisDocumentSymbolProvider.java DocumentSymbolProvider.ftl
+           unknown(!32)
++tpl(1T)   FormattingProvider.ftl             unknown(!33)
+-tpl(1T)   FormattingProvider.ftl             unknown(!33)
++file      SDBasisFormattingProvider.java     unknown(!33)
+           FormattingProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.formatting.SDBasisFormattingProvider.java FormattingProvider.ftl
+           unknown(!33)
++tpl(1T)   PrettyPrintingFormattingProvider.ftl unknown(!34)
+-tpl(1T)   PrettyPrintingFormattingProvider.ftl unknown(!34)
++file      SDBasisPrettyPrintingFormattingProvider.java unknown(!34)
+           PrettyPrintingFormattingProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.formatting.SDBasisPrettyPrintingFormattingProvider.java PrettyPrintingFormattingProvider.ftl
+           unknown(!34)
++tpl(1T)   ReferencesProvider.ftl             unknown(!35)
+-tpl(1T)   ReferencesProvider.ftl             unknown(!35)
++file      SDBasisReferencesProvider.java     unknown(!35)
+           ReferencesProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.references.SDBasisReferencesProvider.java ReferencesProvider.ftl
+           unknown(!35)
++tpl(1T)   ServerCommandCodeLens.ftl          unknown(!36)
+-tpl(1T)   ServerCommandCodeLens.ftl          unknown(!36)
++file      SDBasisServerCommandCodeLens.java  unknown(!36)
+           ServerCommandCodeLens.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.code_lens.SDBasisServerCommandCodeLens.java ServerCommandCodeLens.ftl
+           unknown(!36)
++tpl(1T)   CodeLensProvider.ftl               unknown(!37)
+-tpl(1T)   CodeLensProvider.ftl               unknown(!37)
++file      SDBasisCodeLensProvider.java       unknown(!37)
+           CodeLensProvider.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.code_lens.SDBasisCodeLensProvider.java CodeLensProvider.ftl
+           unknown(!37)
++tpl(1T)   ReferencedSymbolStrategy.ftl       unknown(!38)
+-tpl(1T)   ReferencedSymbolStrategy.ftl       unknown(!38)
++file      VariableReferencedSymbolStrategy.java unknown(!38)
+           ReferencedSymbolStrategy.ftl
+-file      de.monticore.lang.sdbasis._lsp.features.completion.strategy.referenced_symbol.VariableReferencedSymbolStrategy.java ReferencedSymbolStrategy.ftl
+           unknown(!38)

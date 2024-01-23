@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.monticore.lang.sd4development._symboltable.SD4DevelopmentGenitorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-19T11:03:06" hostname="Tuns-MacBook-Pro.local" time="0.007">
+  <properties/>
+  <testcase name="[1] STCreationTest.sd" classname="de.monticore.lang.sd4development._symboltable.SD4DevelopmentGenitorTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

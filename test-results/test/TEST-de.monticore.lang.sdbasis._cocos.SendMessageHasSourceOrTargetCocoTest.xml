@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2024-01-19T11:03:07" hostname="Tuns-MacBook-Pro.local" time="0.099">
+  <properties/>
+  <testcase name="[1] lecture/example_1.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.006"/>
+  <testcase name="[2] lecture/example_2_interactions.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.003"/>
+  <testcase name="[3] lecture/example_3_static.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.006"/>
+  <testcase name="[4] lecture/example_4_constructor.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.004"/>
+  <testcase name="[5] lecture/example_5_factory.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.003"/>
+  <testcase name="[6] lecture/example_6_stereotypes.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.007"/>
+  <testcase name="[7] lecture/example_7_noocl.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.003"/>
+  <testcase name="[8] lecture/example_7_ocl.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.005"/>
+  <testcase name="[9] lecture/example_8_ocl_let.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.004"/>
+  <testcase name="[10] lecture/example_9_non_causal.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.004"/>
+  <testcase name="[11] example.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.002"/>
+  <testcase name="[12] example_completeness_and_stereotypes.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.005"/>
+  <testcase name="[13] allGrammarElements.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.004"/>
+  <testcase name="[14] activities.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.002"/>
+  <testcase name="[15] bid.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.005"/>
+  <testcase name="[16] size.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.011"/>
+  <testcase name="[17] deepTypeUsage.sd" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.002"/>
+  <testcase name="testCocoViolation()" classname="de.monticore.lang.sdbasis._cocos.SendMessageHasSourceOrTargetCocoTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

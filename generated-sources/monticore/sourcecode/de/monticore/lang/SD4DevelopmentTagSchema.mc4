@@ -1,0 +1,35 @@
+package de.monticore.lang;
+
+grammar SD4DevelopmentTagSchema extends de.monticore.tagging.TagSchema, de.monticore.lang.SDBasisTagSchema, de.monticore.literals.MCCommonLiteralsTagSchema, de.monticore.expressions.CommonExpressionsTagSchema, de.monticore.ocl.OCLExpressionsTagSchema, de.monticore.symbols.OOSymbolsTagSchema {
+  SDCallSchemaIdentifier implements ScopeIdentifier =
+    "SDCall";
+
+  SDNewSchemaIdentifier implements ScopeIdentifier =
+    "SDNew";
+
+  SDReturnSchemaIdentifier implements ScopeIdentifier =
+    "SDReturn";
+
+  SDThrowSchemaIdentifier implements ScopeIdentifier =
+    "SDThrow";
+
+  SDEndCallSchemaIdentifier implements ScopeIdentifier =
+    "SDEndCall";
+
+  SDEndCallArrowSchemaIdentifier implements ScopeIdentifier =
+    "SDEndCallArrow";
+
+  SDIncompleteExpressionSchemaIdentifier implements ScopeIdentifier =
+    "SDIncompleteExpression";
+
+  SDClassSchemaIdentifier implements ScopeIdentifier =
+    "SDClass";
+
+  SDConditionSchemaIdentifier implements ScopeIdentifier =
+    "SDCondition";
+
+  SDVariableDeclarationSchemaIdentifier implements ScopeIdentifier =
+    "SDVariableDeclaration";
+
+   start TagSchema;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.monticore.lang.SDParserTest" tests="34" skipped="0" failures="0" errors="0" timestamp="2024-01-19T11:03:00" hostname="Tuns-MacBook-Pro.local" time="0.787">
+  <properties/>
+  <testcase name="[1] lecture/example_1.sd" classname="de.monticore.lang.SDParserTest" time="0.517"/>
+  <testcase name="[2] lecture/example_2_interactions.sd" classname="de.monticore.lang.SDParserTest" time="0.017"/>
+  <testcase name="[3] lecture/example_3_static.sd" classname="de.monticore.lang.SDParserTest" time="0.014"/>
+  <testcase name="[4] lecture/example_4_constructor.sd" classname="de.monticore.lang.SDParserTest" time="0.01"/>
+  <testcase name="[5] lecture/example_5_factory.sd" classname="de.monticore.lang.SDParserTest" time="0.003"/>
+  <testcase name="[6] lecture/example_6_stereotypes.sd" classname="de.monticore.lang.SDParserTest" time="0.008"/>
+  <testcase name="[7] lecture/example_7_noocl.sd" classname="de.monticore.lang.SDParserTest" time="0.005"/>
+  <testcase name="[8] lecture/example_7_ocl.sd" classname="de.monticore.lang.SDParserTest" time="0.034"/>
+  <testcase name="[9] lecture/example_8_ocl_let.sd" classname="de.monticore.lang.SDParserTest" time="0.017"/>
+  <testcase name="[10] lecture/example_9_non_causal.sd" classname="de.monticore.lang.SDParserTest" time="0.004"/>
+  <testcase name="[11] example.sd" classname="de.monticore.lang.SDParserTest" time="0.002"/>
+  <testcase name="[12] example_completeness_and_stereotypes.sd" classname="de.monticore.lang.SDParserTest" time="0.02"/>
+  <testcase name="[13] allGrammarElements.sd" classname="de.monticore.lang.SDParserTest" time="0.004"/>
+  <testcase name="[14] activities.sd" classname="de.monticore.lang.SDParserTest" time="0.013"/>
+  <testcase name="[15] bid.sd" classname="de.monticore.lang.SDParserTest" time="0.017"/>
+  <testcase name="[16] size.sd" classname="de.monticore.lang.SDParserTest" time="0.002"/>
+  <testcase name="[1] artifact_not_sd_name.sd" classname="de.monticore.lang.SDParserTest" time="0.001"/>
+  <testcase name="[2] complete_visible_modifier_contradiction.sd" classname="de.monticore.lang.SDParserTest" time="0.002"/>
+  <testcase name="[3] incomplete_not_allowed.sd" classname="de.monticore.lang.SDParserTest" time="0.002"/>
+  <testcase name="[4] initialization_type_is_not_subtype_of_declaration_type.sd" classname="de.monticore.lang.SDParserTest" time="0.001"/>
+  <testcase name="[5] no_unique_names.sd" classname="de.monticore.lang.SDParserTest" time="0.001"/>
+  <testcase name="[6] ocl_context_not_declared.sd" classname="de.monticore.lang.SDParserTest" time="0.002"/>
+  <testcase name="[7] reference_undeclared_objects.sd" classname="de.monticore.lang.SDParserTest" time="0.002"/>
+  <testcase name="[8] reference_undeclared_objects_with_import.sd" classname="de.monticore.lang.SDParserTest" time="0.002"/>
+  <testcase name="[9] return_before_method.sd" classname="de.monticore.lang.SDParserTest" time="0.001"/>
+  <testcase name="[10] static_method_refers_to_object.sd" classname="de.monticore.lang.SDParserTest" time="0.002"/>
+  <testcase name="[11] uncommon_file_extension.sy" classname="de.monticore.lang.SDParserTest" time="0.001"/>
+  <testcase name="[12] violated_type_naming_conventions_constructor.sd" classname="de.monticore.lang.SDParserTest" time="0.001"/>
+  <testcase name="[13] wrong_package.sd" classname="de.monticore.lang.SDParserTest" time="0.001"/>
+  <testcase name="[14] end_call_no_target_source_specified.sd" classname="de.monticore.lang.SDParserTest" time="0.001"/>
+  <testcase name="[15] send_message_no_target_source_specified.sd" classname="de.monticore.lang.SDParserTest" time="0.002"/>
+  <testcase name="[16] violated_name_naming_conventions.sd" classname="de.monticore.lang.SDParserTest" time="0.002"/>
+  <testcase name="[17] violated_name_naming_conventions_constructor.sd" classname="de.monticore.lang.SDParserTest" time="0.001"/>
+  <testcase name="[18] violated_type_naming_conventions.sd" classname="de.monticore.lang.SDParserTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

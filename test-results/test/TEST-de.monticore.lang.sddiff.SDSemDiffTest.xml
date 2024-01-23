@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.monticore.lang.sddiff.SDSemDiffTest" tests="25" skipped="0" failures="0" errors="0" timestamp="2024-01-19T11:03:07" hostname="Tuns-MacBook-Pro.local" time="2.233">
+  <properties/>
+  <testcase name="testSemDiff_rob3_rob1()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.266"/>
+  <testcase name="testSemDiff_rob3_rob2()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.041"/>
+  <testcase name="testSemDiff_rob3_rob3()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.015"/>
+  <testcase name="testSemDiff_rob3_rob4()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.232"/>
+  <testcase name="testSemDiff_rob3_rob5()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.272"/>
+  <testcase name="testSemDiff_rob4_rob1()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.121"/>
+  <testcase name="testSemDiff_rob4_rob2()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.047"/>
+  <testcase name="testSemDiff_rob4_rob3()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.169"/>
+  <testcase name="testSemDiff_rob4_rob4()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.038"/>
+  <testcase name="testSemDiff_rob4_rob5()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.039"/>
+  <testcase name="testSemDiff_rob5_rob1()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.052"/>
+  <testcase name="testSemDiff_rob5_rob2()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.057"/>
+  <testcase name="testSemDiff_rob5_rob3()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.26"/>
+  <testcase name="testSemDiff_rob5_rob4()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.046"/>
+  <testcase name="testSemDiff_rob5_rob5()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.05"/>
+  <testcase name="testSemDiff_rob1_rob1()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.03"/>
+  <testcase name="testSemDiff_rob1_rob2()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.024"/>
+  <testcase name="testSemDiff_rob1_rob3()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.13"/>
+  <testcase name="testSemDiff_rob1_rob4()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.06"/>
+  <testcase name="testSemDiff_rob1_rob5()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.073"/>
+  <testcase name="testSemDiff_rob2_rob1()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.051"/>
+  <testcase name="testSemDiff_rob2_rob2()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.017"/>
+  <testcase name="testSemDiff_rob2_rob3()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.022"/>
+  <testcase name="testSemDiff_rob2_rob4()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.026"/>
+  <testcase name="testSemDiff_rob2_rob5()" classname="de.monticore.lang.sddiff.SDSemDiffTest" time="0.034"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,229 @@
+========================================================== Detailed Report
++tpl(1T)   DocumentInformationProvider.ftl    unknown
+-tpl(1T)   DocumentInformationProvider.ftl    unknown
++file      SD4DevelopmentDocumentInformationProvider.java unknown
+           DocumentInformationProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentDocumentInformationProvider.java DocumentInformationProvider.ftl
+           unknown
++tpl(1T)   LanguageServerCLI.ftl              unknown(!2)
+-tpl(1T)   LanguageServerCLI.ftl              unknown(!2)
++file      SD4DevelopmentLanguageServerCLI.java unknown(!2)
+           LanguageServerCLI.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentLanguageServerCLI.java LanguageServerCLI.ftl
+           unknown(!2)
++tpl(1T)   LanguageServer.ftl                 unknown(!3)
+-tpl(1T)   LanguageServer.ftl                 unknown(!3)
++file      SD4DevelopmentLanguageServer.java  unknown(!3)
+           LanguageServer.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentLanguageServer.java LanguageServer.ftl
+           unknown(!3)
++tpl(1T)   LanguageServerContext.ftl          unknown(!4)
+-tpl(1T)   LanguageServerContext.ftl          unknown(!4)
++file      SD4DevelopmentLanguageServerContext.java unknown(!4)
+           LanguageServerContext.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentLanguageServerContext.java LanguageServerContext.ftl
+           unknown(!4)
++tpl(1T)   LanguageServerBuilder.ftl          unknown(!5)
+-tpl(1T)   LanguageServerBuilder.ftl          unknown(!5)
++file      SD4DevelopmentLanguageServerBuilder.java unknown(!5)
+           LanguageServerBuilder.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentLanguageServerBuilder.java LanguageServerBuilder.ftl
+           unknown(!5)
++tpl(1T)   TextDocumentService.ftl            unknown(!6)
+-tpl(1T)   TextDocumentService.ftl            unknown(!6)
++file      SD4DevelopmentTextDocumentService.java unknown(!6)
+           TextDocumentService.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentTextDocumentService.java TextDocumentService.ftl
+           unknown(!6)
++tpl(1T)   WorkspaceService.ftl               unknown(!7)
+-tpl(1T)   WorkspaceService.ftl               unknown(!7)
++file      SD4DevelopmentWorkspaceService.javaunknown(!7)
+           WorkspaceService.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentWorkspaceService.java WorkspaceService.ftl
+           unknown(!7)
++tpl(1T)   SyntaxHighlightingService.ftl      unknown(!8)
+-tpl(1T)   SyntaxHighlightingService.ftl      unknown(!8)
++file      SD4DevelopmentSyntaxHighlightingService.java unknown(!8)
+           SyntaxHighlightingService.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentSyntaxHighlightingService.java SyntaxHighlightingService.ftl
+           unknown(!8)
++tpl(1T)   LspAntlrParser.ftl                 unknown(!9)
+-tpl(1T)   LspAntlrParser.ftl                 unknown(!9)
++file      SD4DevelopmentLspAntlrParser.java  unknown(!9)
+           LspAntlrParser.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentLspAntlrParser.java LspAntlrParser.ftl
+           unknown(!9)
++tpl(1T)   LspAntlrLexer.ftl                  unknown(!10)
+-tpl(1T)   LspAntlrLexer.ftl                  unknown(!10)
++file      SD4DevelopmentLspAntlrLexer.java   unknown(!10)
+           LspAntlrLexer.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentLspAntlrLexer.java LspAntlrLexer.ftl
+           unknown(!10)
++tpl(1T)   IndexingManager.ftl                unknown(!11)
+-tpl(1T)   IndexingManager.ftl                unknown(!11)
++file      SD4DevelopmentIndexingManager.java unknown(!11)
+           IndexingManager.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentIndexingManager.java IndexingManager.ftl
+           unknown(!11)
++tpl(1T)   DocumentInformationFilter.ftl      unknown(!12)
+-tpl(1T)   DocumentInformationFilter.ftl      unknown(!12)
++file      SD4DevelopmentDocumentInformationFilter.java unknown(!12)
+           DocumentInformationFilter.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentDocumentInformationFilter.java DocumentInformationFilter.ftl
+           unknown(!12)
++tpl(1T)   SymbolUsageResolutionProvider.ftl  unknown(!13)
+-tpl(1T)   SymbolUsageResolutionProvider.ftl  unknown(!13)
++file      SD4DevelopmentSymbolUsageResolutionProvider.java unknown(!13)
+           SymbolUsageResolutionProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.SD4DevelopmentSymbolUsageResolutionProvider.java SymbolUsageResolutionProvider.ftl
+           unknown(!13)
++tpl(1T)   LanguageAccess.ftl                 unknown(!14)
+-tpl(1T)   LanguageAccess.ftl                 unknown(!14)
++file      SD4DevelopmentLanguageAccess.java  unknown(!14)
+           LanguageAccess.ftl
+-file      de.monticore.lang.sd4development._lsp.language_access.SD4DevelopmentLanguageAccess.java LanguageAccess.ftl
+           unknown(!14)
++tpl(1T)   LspCoCoRunner.ftl                  unknown(!15)
+-tpl(1T)   LspCoCoRunner.ftl                  unknown(!15)
++file      SD4DevelopmentLspCoCoRunner.java   unknown(!15)
+           LspCoCoRunner.ftl
+-file      de.monticore.lang.sd4development._lsp.language_access.SD4DevelopmentLspCoCoRunner.java LspCoCoRunner.ftl
+           unknown(!15)
++tpl(1T)   ScopeManager.ftl                   unknown(!16)
+-tpl(1T)   ScopeManager.ftl                   unknown(!16)
++file      SD4DevelopmentScopeManager.java    unknown(!16)
+           ScopeManager.ftl
+-file      de.monticore.lang.sd4development._lsp.language_access.SD4DevelopmentScopeManager.java ScopeManager.ftl
+           unknown(!16)
++tpl(1T)   ArtifactScopeWithFindings.ftl      unknown(!17)
+-tpl(1T)   ArtifactScopeWithFindings.ftl      unknown(!17)
++file      SD4DevelopmentArtifactScopeWithFindings.java unknown(!17)
+           ArtifactScopeWithFindings.ftl
+-file      de.monticore.lang.sd4development._lsp.language_access.SD4DevelopmentArtifactScopeWithFindings.java ArtifactScopeWithFindings.ftl
+           unknown(!17)
++tpl(1T)   DiagnosticsProvider.ftl            unknown(!18)
+-tpl(1T)   DiagnosticsProvider.ftl            unknown(!18)
++file      SD4DevelopmentDiagnosticsProvider.java unknown(!18)
+           DiagnosticsProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.diagnostics.SD4DevelopmentDiagnosticsProvider.java DiagnosticsProvider.ftl
+           unknown(!18)
++tpl(1T)   CodeActionProvider.ftl             unknown(!19)
+-tpl(1T)   CodeActionProvider.ftl             unknown(!19)
++file      SD4DevelopmentCodeActionProvider.java unknown(!19)
+           CodeActionProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.code_action.SD4DevelopmentCodeActionProvider.java CodeActionProvider.ftl
+           unknown(!19)
++tpl(1T)   PrepareRenameProvider.ftl          unknown(!20)
+-tpl(1T)   PrepareRenameProvider.ftl          unknown(!20)
++file      SD4DevelopmentPrepareRenameProvider.java unknown(!20)
+           PrepareRenameProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.rename.SD4DevelopmentPrepareRenameProvider.java PrepareRenameProvider.ftl
+           unknown(!20)
++tpl(1T)   RenameProvider.ftl                 unknown(!21)
+-tpl(1T)   RenameProvider.ftl                 unknown(!21)
++file      SD4DevelopmentRenameProvider.java  unknown(!21)
+           RenameProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.rename.SD4DevelopmentRenameProvider.java RenameProvider.ftl
+           unknown(!21)
++tpl(1T)   LexerProvider.ftl                  unknown(!22)
+-tpl(1T)   LexerProvider.ftl                  unknown(!22)
++file      SD4DevelopmentLexerProvider.java   unknown(!22)
+           LexerProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.syntax_highlighting.SD4DevelopmentLexerProvider.java LexerProvider.ftl
+           unknown(!22)
++tpl(1T)   SemanticTokensProvider.ftl         unknown(!23)
+-tpl(1T)   SemanticTokensProvider.ftl         unknown(!23)
++file      SD4DevelopmentSemanticTokensProvider.java unknown(!23)
+           SemanticTokensProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.syntax_highlighting.SD4DevelopmentSemanticTokensProvider.java SemanticTokensProvider.ftl
+           unknown(!23)
++tpl(1T)   CompletionAntlrParser.ftl          unknown(!24)
+-tpl(1T)   CompletionAntlrParser.ftl          unknown(!24)
++file      SD4DevelopmentCompletionAntlrParser.java unknown(!24)
+           CompletionAntlrParser.ftl
+-file      de.monticore.lang.sd4development._lsp.features.completion.SD4DevelopmentCompletionAntlrParser.java CompletionAntlrParser.ftl
+           unknown(!24)
++tpl(1T)   CompletionProvider.ftl             unknown(!25)
+-tpl(1T)   CompletionProvider.ftl             unknown(!25)
++file      SD4DevelopmentCompletionProvider.java unknown(!25)
+           CompletionProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.completion.SD4DevelopmentCompletionProvider.java CompletionProvider.ftl
+           unknown(!25)
++tpl(1T)   ExpectedTokenVisitor.ftl           unknown(!26)
+-tpl(1T)   ExpectedTokenVisitor.ftl           unknown(!26)
++file      SD4DevelopmentExpectedTokenVisitor.java unknown(!26)
+           ExpectedTokenVisitor.ftl
+-file      de.monticore.lang.sd4development._lsp.features.completion.SD4DevelopmentExpectedTokenVisitor.java ExpectedTokenVisitor.ftl
+           unknown(!26)
++tpl(1T)   SymbolCollection.ftl               unknown(!27)
+-tpl(1T)   SymbolCollection.ftl               unknown(!27)
++file      SD4DevelopmentSymbolCollection.javaunknown(!27)
+           SymbolCollection.ftl
+-file      de.monticore.lang.sd4development._lsp.features.completion.SD4DevelopmentSymbolCollection.java SymbolCollection.ftl
+           unknown(!27)
++tpl(1T)   SymbolCollector.ftl                unknown(!28)
+-tpl(1T)   SymbolCollector.ftl                unknown(!28)
++file      SD4DevelopmentSymbolCollector.java unknown(!28)
+           SymbolCollector.ftl
+-file      de.monticore.lang.sd4development._lsp.features.completion.SD4DevelopmentSymbolCollector.java SymbolCollector.ftl
+           unknown(!28)
++tpl(1T)   DefaultCompletionStrategy.ftl      unknown(!29)
+-tpl(1T)   DefaultCompletionStrategy.ftl      unknown(!29)
++file      SD4DevelopmentDefaultCompletionStrategy.java unknown(!29)
+           DefaultCompletionStrategy.ftl
+-file      de.monticore.lang.sd4development._lsp.features.completion.strategy.SD4DevelopmentDefaultCompletionStrategy.java DefaultCompletionStrategy.ftl
+           unknown(!29)
++tpl(1T)   DefinitionProvider.ftl             unknown(!30)
+-tpl(1T)   DefinitionProvider.ftl             unknown(!30)
++file      SD4DevelopmentDefinitionProvider.java unknown(!30)
+           DefinitionProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.definition.SD4DevelopmentDefinitionProvider.java DefinitionProvider.ftl
+           unknown(!30)
++tpl(1T)   HoverProvider.ftl                  unknown(!31)
+-tpl(1T)   HoverProvider.ftl                  unknown(!31)
++file      SD4DevelopmentHoverProvider.java   unknown(!31)
+           HoverProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.hover.SD4DevelopmentHoverProvider.java HoverProvider.ftl
+           unknown(!31)
++tpl(1T)   DocumentSymbolProvider.ftl         unknown(!32)
+-tpl(1T)   DocumentSymbolProvider.ftl         unknown(!32)
++file      SD4DevelopmentDocumentSymbolProvider.java unknown(!32)
+           DocumentSymbolProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.symbols.SD4DevelopmentDocumentSymbolProvider.java DocumentSymbolProvider.ftl
+           unknown(!32)
++tpl(1T)   FormattingProvider.ftl             unknown(!33)
+-tpl(1T)   FormattingProvider.ftl             unknown(!33)
++file      SD4DevelopmentFormattingProvider.java unknown(!33)
+           FormattingProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.formatting.SD4DevelopmentFormattingProvider.java FormattingProvider.ftl
+           unknown(!33)
++tpl(1T)   PrettyPrintingFormattingProvider.ftl unknown(!34)
+-tpl(1T)   PrettyPrintingFormattingProvider.ftl unknown(!34)
++file      SD4DevelopmentPrettyPrintingFormattingProvider.java unknown(!34)
+           PrettyPrintingFormattingProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.formatting.SD4DevelopmentPrettyPrintingFormattingProvider.java PrettyPrintingFormattingProvider.ftl
+           unknown(!34)
++tpl(1T)   ReferencesProvider.ftl             unknown(!35)
+-tpl(1T)   ReferencesProvider.ftl             unknown(!35)
++file      SD4DevelopmentReferencesProvider.java unknown(!35)
+           ReferencesProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.references.SD4DevelopmentReferencesProvider.java ReferencesProvider.ftl
+           unknown(!35)
++tpl(1T)   ServerCommandCodeLens.ftl          unknown(!36)
+-tpl(1T)   ServerCommandCodeLens.ftl          unknown(!36)
++file      SD4DevelopmentServerCommandCodeLens.java unknown(!36)
+           ServerCommandCodeLens.ftl
+-file      de.monticore.lang.sd4development._lsp.features.code_lens.SD4DevelopmentServerCommandCodeLens.java ServerCommandCodeLens.ftl
+           unknown(!36)
++tpl(1T)   CodeLensProvider.ftl               unknown(!37)
+-tpl(1T)   CodeLensProvider.ftl               unknown(!37)
++file      SD4DevelopmentCodeLensProvider.javaunknown(!37)
+           CodeLensProvider.ftl
+-file      de.monticore.lang.sd4development._lsp.features.code_lens.SD4DevelopmentCodeLensProvider.java CodeLensProvider.ftl
+           unknown(!37)
++tpl(1T)   ReferencedSymbolStrategy.ftl       unknown(!38)
+-tpl(1T)   ReferencedSymbolStrategy.ftl       unknown(!38)
++file      VariableReferencedSymbolStrategy.java unknown(!38)
+           ReferencedSymbolStrategy.ftl
+-file      de.monticore.lang.sd4development._lsp.features.completion.strategy.referenced_symbol.VariableReferencedSymbolStrategy.java ReferencedSymbolStrategy.ftl
+           unknown(!38)

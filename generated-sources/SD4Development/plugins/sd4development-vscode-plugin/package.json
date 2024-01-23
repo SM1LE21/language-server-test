@@ -1,0 +1,72 @@
+
+{
+	"name": "sd4development-lsp",
+	"displayName": "SD4Development LSP",
+	"description": "",
+	"publisher": "se-rwth",
+	"version": "7.6.0-SNAPSHOT",
+	"engines": {
+		"vscode": "^1.53.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "SD4Development",
+				"extensions": [
+					"sd"
+				]
+			}
+		],
+		"commands":[{
+			"title": "Open LSP Token Debug Window",
+			"command": "sd4development.debugShowTokenInfo"
+		}],
+		"configuration": {
+			"title": "SD4Development LSP",
+			"properties": {
+				"lsp.sd4development.useRunningServer": {
+					"type": "boolean",
+					"default": false,
+					"description": "Should the SD4Development LSP use a server that is already running. Automatically enabled if environment variable SD4DEVELOPMENT_LSP_PORT is set"
+				},
+				"lsp.sd4development.runningServerPort": {
+					"type": "number",
+					"default": 3000,
+					"description": "Port for the already running server. Overwritten by environment variable SD4DEVELOPMENT_LSP_PORT"
+				}
+			}
+		}
+	},
+	"activationEvents": [
+		"onLanguage:SD4Development"
+	],
+	"main": "./out/Extension.js",
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"lint": "eslint src --ext ts",
+		"package": "yes | vsce package"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.53.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.19.0",
+		"@typescript-eslint/eslint-plugin": "^4.14.1",
+		"@typescript-eslint/parser": "^4.14.1",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0",
+		"vsce": "^1.85.0",
+		"yes": "^1.1.1"
+	},
+	"dependencies": {
+		"vscode-languageclient": "^7.0.0"
+	}
+}

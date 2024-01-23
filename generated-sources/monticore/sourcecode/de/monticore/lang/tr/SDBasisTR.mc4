@@ -1,0 +1,947 @@
+package de.monticore.lang.tr;
+
+component grammar SDBasisTR extends de.monticore.types.tr.MCBasicTypesTR, de.monticore.symbols.tr.BasicSymbolsTR, de.monticore.expressions.tr.ExpressionsBasisTR, de.monticore.tr.UMLStereotypeTR {
+  SDBasisTFRule =
+    TFRule;
+
+  SDActivityBar_Rep implements ITFSDActivityBar, ISDBasisTFPart astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDActivityBar? ReplacementOp rhs:ITFSDActivityBar? "]]");
+
+  SDActivityBar_Pat implements ITFSDActivityBar, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDActivityBar" schemaVarName:Name | "{" sDElement:ITFSDElement* "}" | (("SDActivityBar"? schemaVarName:Name| "SDActivityBar" schemaVarName:Name?) "[[" ("{" sDElement:ITFSDElement* "}") "]]");
+
+  SDActivityBar_Neg implements ITFSDActivityBar, ISDBasisTFPart astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDActivityBar:ITFSDActivityBar "]]";
+
+  SDActivityBar_Opt implements ITFSDActivityBar, ISDBasisTFPart astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDActivityBar:ITFSDActivityBar "]]";
+
+  SDActivityBar_List implements ITFSDActivityBar, ISDBasisTFPart astimplements de.monticore.tf.ast.IList =
+    "list" "<SDActivityBar>"? schemaVarName:Name? "[[" sDActivityBar:SDActivityBar_Pat "]]";
+
+  SDSendMessage_Rep implements ITFSDSendMessage, ISDBasisTFPart, ITFSDInteraction astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDSendMessage? ReplacementOp rhs:ITFSDSendMessage? "]]");
+
+  SDSendMessage_Pat implements ITFSDSendMessage, ITFSDInteraction, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDSendMessage" schemaVarName:Name | sDSource:ITFSDSource? "->" sDTarget:ITFSDTarget? ":" sDAction:ITFSDAction (";"| sDActivityBar:ITFSDActivityBar) | (("SDSendMessage"? schemaVarName:Name| "SDSendMessage" schemaVarName:Name?) "[[" (sDSource:ITFSDSource? "->" sDTarget:ITFSDTarget? ":" sDAction:ITFSDAction (";"| sDActivityBar:ITFSDActivityBar)) "]]");
+
+  SDSendMessage_Neg implements ITFSDSendMessage, ISDBasisTFPart, ITFSDInteraction astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDSendMessage:ITFSDSendMessage "]]";
+
+  SDSendMessage_Opt implements ITFSDSendMessage, ISDBasisTFPart, ITFSDInteraction astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDSendMessage:ITFSDSendMessage "]]";
+
+  SDSendMessage_List implements ITFSDSendMessage, ISDBasisTFPart, ITFSDInteraction astimplements de.monticore.tf.ast.IList =
+    "list" "<SDSendMessage>"? schemaVarName:Name? "[[" sDSendMessage:SDSendMessage_Pat "]]";
+
+  SDObjectTarget_Rep implements ITFSDObjectTarget, ISDBasisTFPart, ITFSDTarget astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDObjectTarget? ReplacementOp rhs:ITFSDObjectTarget? "]]");
+
+  SDObjectTarget_Pat implements ITFSDObjectTarget, ITFSDTarget, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDObjectTarget" schemaVarName:Name | name:TfIdentifierName | (("SDObjectTarget"? schemaVarName:Name| "SDObjectTarget" schemaVarName:Name?) "[[" (name:TfIdentifierName) "]]");
+
+  SDObjectTarget_Neg implements ITFSDObjectTarget, ISDBasisTFPart, ITFSDTarget astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDObjectTarget:ITFSDObjectTarget "]]";
+
+  SDObjectTarget_Opt implements ITFSDObjectTarget, ISDBasisTFPart, ITFSDTarget astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDObjectTarget:ITFSDObjectTarget "]]";
+
+  SDObjectTarget_List implements ITFSDObjectTarget, ISDBasisTFPart, ITFSDTarget astimplements de.monticore.tf.ast.IList =
+    "list" "<SDObjectTarget>"? schemaVarName:Name? "[[" sDObjectTarget:SDObjectTarget_Pat "]]";
+
+  SDObjectSource_Rep implements ITFSDObjectSource, ISDBasisTFPart, ITFSDSource astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDObjectSource? ReplacementOp rhs:ITFSDObjectSource? "]]");
+
+  SDObjectSource_Pat implements ITFSDObjectSource, ITFSDSource, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDObjectSource" schemaVarName:Name | name:TfIdentifierName | (("SDObjectSource"? schemaVarName:Name| "SDObjectSource" schemaVarName:Name?) "[[" (name:TfIdentifierName) "]]");
+
+  SDObjectSource_Neg implements ITFSDObjectSource, ISDBasisTFPart, ITFSDSource astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDObjectSource:ITFSDObjectSource "]]";
+
+  SDObjectSource_Opt implements ITFSDObjectSource, ISDBasisTFPart, ITFSDSource astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDObjectSource:ITFSDObjectSource "]]";
+
+  SDObjectSource_List implements ITFSDObjectSource, ISDBasisTFPart, ITFSDSource astimplements de.monticore.tf.ast.IList =
+    "list" "<SDObjectSource>"? schemaVarName:Name? "[[" sDObjectSource:SDObjectSource_Pat "]]";
+
+  SDObject_Rep implements ITFSDObject, ISDBasisTFPart, ITFVariable astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDObject? ReplacementOp rhs:ITFSDObject? "]]");
+
+  SDObject_Pat implements ITFSDObject, ITFVariable, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDObject" schemaVarName:Name | stereotype:ITFStereotype? sDModifier:ITFSDModifier* name:TfIdentifierName (":" mCObjectType:ITFMCObjectType)? ";" | (("SDObject"? schemaVarName:Name| "SDObject" schemaVarName:Name?) "[[" (stereotype:ITFStereotype? sDModifier:ITFSDModifier* name:TfIdentifierName (":" mCObjectType:ITFMCObjectType)? ";") "]]");
+
+  SDObject_Neg implements ITFSDObject, ISDBasisTFPart, ITFVariable astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDObject:ITFSDObject "]]";
+
+  SDObject_Opt implements ITFSDObject, ISDBasisTFPart, ITFVariable astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDObject:ITFSDObject "]]";
+
+  SDObject_List implements ITFSDObject, ISDBasisTFPart, ITFVariable astimplements de.monticore.tf.ast.IList =
+    "list" "<SDObject>"? schemaVarName:Name? "[[" sDObject:SDObject_Pat "]]";
+
+  SDVisibleModifier_Rep implements ITFSDVisibleModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDVisibleModifier? ReplacementOp rhs:ITFSDVisibleModifier? "]]");
+
+  SDVisibleModifier_Pat implements ITFSDVisibleModifier, ITFSDModifier, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDVisibleModifier" schemaVarName:Name |  key("visible") | (("SDVisibleModifier"? schemaVarName:Name| "SDVisibleModifier" schemaVarName:Name?) "[[" ( key("visible")) "]]");
+
+  SDVisibleModifier_Neg implements ITFSDVisibleModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDVisibleModifier:ITFSDVisibleModifier "]]";
+
+  SDVisibleModifier_Opt implements ITFSDVisibleModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDVisibleModifier:ITFSDVisibleModifier "]]";
+
+  SDVisibleModifier_List implements ITFSDVisibleModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.IList =
+    "list" "<SDVisibleModifier>"? schemaVarName:Name? "[[" sDVisibleModifier:SDVisibleModifier_Pat "]]";
+
+  SDInitialModifier_Rep implements ITFSDInitialModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDInitialModifier? ReplacementOp rhs:ITFSDInitialModifier? "]]");
+
+  SDInitialModifier_Pat implements ITFSDInitialModifier, ITFSDModifier, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDInitialModifier" schemaVarName:Name |  key("initial") | (("SDInitialModifier"? schemaVarName:Name| "SDInitialModifier" schemaVarName:Name?) "[[" ( key("initial")) "]]");
+
+  SDInitialModifier_Neg implements ITFSDInitialModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDInitialModifier:ITFSDInitialModifier "]]";
+
+  SDInitialModifier_Opt implements ITFSDInitialModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDInitialModifier:ITFSDInitialModifier "]]";
+
+  SDInitialModifier_List implements ITFSDInitialModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.IList =
+    "list" "<SDInitialModifier>"? schemaVarName:Name? "[[" sDInitialModifier:SDInitialModifier_Pat "]]";
+
+  SDFreeModifier_Rep implements ITFSDFreeModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDFreeModifier? ReplacementOp rhs:ITFSDFreeModifier? "]]");
+
+  SDFreeModifier_Pat implements ITFSDFreeModifier, ITFSDModifier, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDFreeModifier" schemaVarName:Name | "..." |  key("free") | (("SDFreeModifier"? schemaVarName:Name| "SDFreeModifier" schemaVarName:Name?) "[[" ("..."|  key("free")) "]]");
+
+  SDFreeModifier_Neg implements ITFSDFreeModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDFreeModifier:ITFSDFreeModifier "]]";
+
+  SDFreeModifier_Opt implements ITFSDFreeModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDFreeModifier:ITFSDFreeModifier "]]";
+
+  SDFreeModifier_List implements ITFSDFreeModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.IList =
+    "list" "<SDFreeModifier>"? schemaVarName:Name? "[[" sDFreeModifier:SDFreeModifier_Pat "]]";
+
+  SDCompleteModifier_Rep implements ITFSDCompleteModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDCompleteModifier? ReplacementOp rhs:ITFSDCompleteModifier? "]]");
+
+  SDCompleteModifier_Pat implements ITFSDCompleteModifier, ITFSDModifier, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDCompleteModifier" schemaVarName:Name |  {
+    noSpace(2,3)} ?  "("  key("c") ")" |  key("complete") | (("SDCompleteModifier"? schemaVarName:Name| "SDCompleteModifier" schemaVarName:Name?) "[[" ( {
+    noSpace(2,3)} ?  "("  key("c") ")"|  key("complete")) "]]");
+
+  SDCompleteModifier_Neg implements ITFSDCompleteModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDCompleteModifier:ITFSDCompleteModifier "]]";
+
+  SDCompleteModifier_Opt implements ITFSDCompleteModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDCompleteModifier:ITFSDCompleteModifier "]]";
+
+  SDCompleteModifier_List implements ITFSDCompleteModifier, ISDBasisTFPart, ITFSDModifier astimplements de.monticore.tf.ast.IList =
+    "list" "<SDCompleteModifier>"? schemaVarName:Name? "[[" sDCompleteModifier:SDCompleteModifier_Pat "]]";
+
+   /*Skipping supers due to empty prod  */ 
+  SDBody_Rep implements ITFSDBody, ISDBasisTFPart astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDBody? ReplacementOp rhs:ITFSDBody? "]]");
+
+  /* No I?TFPart supers due to emptiness */
+  SDBody_Pat implements ITFSDBody astimplements de.monticore.tf.ast.IPattern =
+    "SDBody" schemaVarName:Name | sDElement:ITFSDElement* | (("SDBody"? schemaVarName:Name| "SDBody" schemaVarName:Name?) "[[" (sDElement:ITFSDElement*) "]]");
+
+   /*Skipping supers due to empty prod  */ 
+  SDBody_Neg implements ITFSDBody, ISDBasisTFPart astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDBody:ITFSDBody "]]";
+
+   /*Skipping supers due to empty prod  */ 
+  SDBody_Opt implements ITFSDBody, ISDBasisTFPart astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDBody:ITFSDBody "]]";
+
+   /*Skipping supers due to empty prod*/ 
+  SDBody_List implements ITFSDBody, ISDBasisTFPart astimplements de.monticore.tf.ast.IList =
+    "list" "<SDBody>"? schemaVarName:Name? "[[" sDBody:SDBody_Pat "]]";
+
+  SequenceDiagram_Rep implements ITFSequenceDiagram, ISDBasisTFPart, ITFDiagram astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSequenceDiagram? ReplacementOp rhs:ITFSequenceDiagram? "]]");
+
+  SequenceDiagram_Pat implements ITFSequenceDiagram, ITFDiagram, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SequenceDiagram" schemaVarName:Name | stereotype:ITFStereotype? sDModifier:ITFSDModifier* "sequencediagram" name:TfIdentifierName "{" sDObject:ITFSDObject* sDBody:ITFSDBody "}" | (("SequenceDiagram"? schemaVarName:Name| "SequenceDiagram" schemaVarName:Name?) "[[" (stereotype:ITFStereotype? sDModifier:ITFSDModifier* "sequencediagram" name:TfIdentifierName "{" sDObject:ITFSDObject* sDBody:ITFSDBody "}") "]]");
+
+  SequenceDiagram_Neg implements ITFSequenceDiagram, ISDBasisTFPart, ITFDiagram astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sequenceDiagram:ITFSequenceDiagram "]]";
+
+  SequenceDiagram_Opt implements ITFSequenceDiagram, ISDBasisTFPart, ITFDiagram astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sequenceDiagram:ITFSequenceDiagram "]]";
+
+  SequenceDiagram_List implements ITFSequenceDiagram, ISDBasisTFPart, ITFDiagram astimplements de.monticore.tf.ast.IList =
+    "list" "<SequenceDiagram>"? schemaVarName:Name? "[[" sequenceDiagram:SequenceDiagram_Pat "]]";
+
+  SDArtifact_Rep implements ITFSDArtifact, ISDBasisTFPart astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDArtifact? ReplacementOp rhs:ITFSDArtifact? "]]");
+
+  SDArtifact_Pat implements ITFSDArtifact, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDArtifact" schemaVarName:Name | ("package" packageDeclaration:ITFMCQualifiedName&  ";")? mCImportStatement:ITFMCImportStatement* sequenceDiagram:ITFSequenceDiagram | (("SDArtifact"? schemaVarName:Name| "SDArtifact" schemaVarName:Name?) "[[" (("package" packageDeclaration:ITFMCQualifiedName&  ";")? mCImportStatement:ITFMCImportStatement* sequenceDiagram:ITFSequenceDiagram) "]]");
+
+  SDArtifact_Neg implements ITFSDArtifact, ISDBasisTFPart astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDArtifact:ITFSDArtifact "]]";
+
+  SDArtifact_Opt implements ITFSDArtifact, ISDBasisTFPart astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDArtifact:ITFSDArtifact "]]";
+
+  SDArtifact_List implements ITFSDArtifact, ISDBasisTFPart astimplements de.monticore.tf.ast.IList =
+    "list" "<SDArtifact>"? schemaVarName:Name? "[[" sDArtifact:SDArtifact_Pat "]]";
+
+   /* do not generate a builder for me */ 
+  SDModifier_Pat implements ITFSDModifier, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDModifier" schemaVarName:Name | "SDModifier" schemaVarName:Name? "[[" sDModifier:ITFSDModifier "]]";
+
+  SDModifier_Rep implements ITFSDModifier, ISDBasisTFPart astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDModifier? ReplacementOp rhs:ITFSDModifier? "]]");
+
+  SDModifier_Neg implements ITFSDModifier, ISDBasisTFPart astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDModifier:ITFSDModifier "]]";
+
+  SDModifier_List implements ITFSDModifier, ISDBasisTFPart astimplements de.monticore.tf.ast.IList =
+    "list" "<SDModifier>"? schemaVarName:Name? "[[" sDModifier:SDModifier_Pat "]]";
+
+  SDModifier_Opt implements ITFSDModifier, ISDBasisTFPart astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDModifier:ITFSDModifier "]]";
+
+   /* do not generate a builder for me */ 
+  SDElement_Pat implements ITFSDElement, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDElement" schemaVarName:Name | "SDElement" schemaVarName:Name? "[[" sDElement:ITFSDElement "]]";
+
+  SDElement_Rep implements ITFSDElement, ISDBasisTFPart astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDElement? ReplacementOp rhs:ITFSDElement? "]]");
+
+  SDElement_Neg implements ITFSDElement, ISDBasisTFPart astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDElement:ITFSDElement "]]";
+
+  SDElement_List implements ITFSDElement, ISDBasisTFPart astimplements de.monticore.tf.ast.IList =
+    "list" "<SDElement>"? schemaVarName:Name? "[[" sDElement:SDElement_Pat "]]";
+
+  SDElement_Opt implements ITFSDElement, ISDBasisTFPart astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDElement:ITFSDElement "]]";
+
+   /* do not generate a builder for me */ 
+  SDInteraction_Pat implements ITFSDInteraction, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDInteraction" schemaVarName:Name | "SDInteraction" schemaVarName:Name? "[[" sDInteraction:ITFSDInteraction "]]";
+
+  SDInteraction_Rep implements ITFSDInteraction, ISDBasisTFPart astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDInteraction? ReplacementOp rhs:ITFSDInteraction? "]]");
+
+  SDInteraction_Neg implements ITFSDInteraction, ISDBasisTFPart astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDInteraction:ITFSDInteraction "]]";
+
+  SDInteraction_List implements ITFSDInteraction, ISDBasisTFPart astimplements de.monticore.tf.ast.IList =
+    "list" "<SDInteraction>"? schemaVarName:Name? "[[" sDInteraction:SDInteraction_Pat "]]";
+
+  SDInteraction_Opt implements ITFSDInteraction, ISDBasisTFPart astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDInteraction:ITFSDInteraction "]]";
+
+   /* do not generate a builder for me */ 
+  SDSource_Pat implements ITFSDSource, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDSource" schemaVarName:Name | "SDSource" schemaVarName:Name? "[[" sDSource:ITFSDSource "]]";
+
+  SDSource_Rep implements ITFSDSource, ISDBasisTFPart astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDSource? ReplacementOp rhs:ITFSDSource? "]]");
+
+  SDSource_Neg implements ITFSDSource, ISDBasisTFPart astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDSource:ITFSDSource "]]";
+
+  SDSource_List implements ITFSDSource, ISDBasisTFPart astimplements de.monticore.tf.ast.IList =
+    "list" "<SDSource>"? schemaVarName:Name? "[[" sDSource:SDSource_Pat "]]";
+
+  SDSource_Opt implements ITFSDSource, ISDBasisTFPart astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDSource:ITFSDSource "]]";
+
+   /* do not generate a builder for me */ 
+  SDTarget_Pat implements ITFSDTarget, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDTarget" schemaVarName:Name | "SDTarget" schemaVarName:Name? "[[" sDTarget:ITFSDTarget "]]";
+
+  SDTarget_Rep implements ITFSDTarget, ISDBasisTFPart astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDTarget? ReplacementOp rhs:ITFSDTarget? "]]");
+
+  SDTarget_Neg implements ITFSDTarget, ISDBasisTFPart astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDTarget:ITFSDTarget "]]";
+
+  SDTarget_List implements ITFSDTarget, ISDBasisTFPart astimplements de.monticore.tf.ast.IList =
+    "list" "<SDTarget>"? schemaVarName:Name? "[[" sDTarget:SDTarget_Pat "]]";
+
+  SDTarget_Opt implements ITFSDTarget, ISDBasisTFPart astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDTarget:ITFSDTarget "]]";
+
+   /* do not generate a builder for me */ 
+  SDAction_Pat implements ITFSDAction, ISDBasisTFPart astimplements de.monticore.tf.ast.IPattern =
+    "SDAction" schemaVarName:Name | "SDAction" schemaVarName:Name? "[[" sDAction:ITFSDAction "]]";
+
+  SDAction_Rep implements ITFSDAction, ISDBasisTFPart astimplements de.monticore.tf.ast.IReplacement =
+    ("[[" lhs:ITFSDAction? ReplacementOp rhs:ITFSDAction? "]]");
+
+  SDAction_Neg implements ITFSDAction, ISDBasisTFPart astimplements de.monticore.tf.ast.INegation =
+    "not" "[[" sDAction:ITFSDAction "]]";
+
+  SDAction_List implements ITFSDAction, ISDBasisTFPart astimplements de.monticore.tf.ast.IList =
+    "list" "<SDAction>"? schemaVarName:Name? "[[" sDAction:SDAction_Pat "]]";
+
+  SDAction_Opt implements ITFSDAction, ISDBasisTFPart astimplements de.monticore.tf.ast.IOptional =
+    "opt" "[[" sDAction:ITFSDAction "]]";
+
+  interface ITFSDArtifact astextends de.monticore.tf.ast.ITFElement;
+
+  interface ITFSequenceDiagram extends ITFDiagram astextends de.monticore.tf.ast.ITFElement;
+
+  /* No super rule (interfaces) due to being empty */
+  interface ITFSDBody astextends de.monticore.tf.ast.ITFElement;
+
+  interface ITFSDCompleteModifier extends ITFSDModifier astextends de.monticore.tf.ast.ITFElement;
+
+  interface ITFSDFreeModifier extends ITFSDModifier astextends de.monticore.tf.ast.ITFElement;
+
+  interface ITFSDInitialModifier extends ITFSDModifier astextends de.monticore.tf.ast.ITFElement;
+
+  interface ITFSDVisibleModifier extends ITFSDModifier astextends de.monticore.tf.ast.ITFElement;
+
+  interface ITFSDObject extends ITFVariable astextends de.monticore.tf.ast.ITFElement;
+
+  interface ITFSDObjectSource extends ITFSDSource astextends de.monticore.tf.ast.ITFElement;
+
+  interface ITFSDObjectTarget extends ITFSDTarget astextends de.monticore.tf.ast.ITFElement;
+
+  interface ITFSDSendMessage extends ITFSDInteraction astextends de.monticore.tf.ast.ITFElement;
+
+  interface ITFSDActivityBar astextends de.monticore.tf.ast.ITFElement;
+
+  /* NO extends ISDBasisTFPart<?> */
+  interface ITFSDModifier astextends de.monticore.tf.ast.ITFElement;
+
+  /* NO extends ISDBasisTFPart<?> */
+  interface ITFSDElement astextends de.monticore.tf.ast.ITFElement;
+
+  /* NO extends ISDBasisTFPart<?> */
+  interface ITFSDInteraction extends ITFSDElement astextends de.monticore.tf.ast.ITFElement;
+
+  /* NO extends ISDBasisTFPart<?> */
+  interface ITFSDSource astextends de.monticore.tf.ast.ITFElement;
+
+  /* NO extends ISDBasisTFPart<?> */
+  interface ITFSDTarget astextends de.monticore.tf.ast.ITFElement;
+
+  /* NO extends ISDBasisTFPart<?> */
+  interface ITFSDAction astextends de.monticore.tf.ast.ITFElement;
+
+  interface ISDBasisTFPart extends ITFPart;
+
+  astrule SDArtifact_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDArtifact.class;
+    }
+    method public ASTITFSDArtifact getTFElement() {
+      return getSDArtifact();
+    }
+  ;
+  astrule SDArtifact_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDArtifact.class;
+    }
+    method public ASTITFSDArtifact getTFElement() {
+      return getSDArtifact();
+    }
+  ;
+  astrule SDArtifact_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDArtifact.class;
+    }
+  ;
+  astrule SDArtifact_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDArtifact.class;
+    }
+    method public ASTITFSDArtifact getTFElement() {
+      return getSDArtifact();
+    }
+  ;
+  astrule SDArtifact_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDArtifact.class;
+    }
+  ;
+  astrule SequenceDiagram_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSequenceDiagram.class;
+    }
+    method public ASTITFSequenceDiagram getTFElement() {
+      return getSequenceDiagram();
+    }
+  ;
+  astrule SequenceDiagram_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSequenceDiagram.class;
+    }
+    method public ASTITFSequenceDiagram getTFElement() {
+      return getSequenceDiagram();
+    }
+  ;
+  astrule SequenceDiagram_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSequenceDiagram.class;
+    }
+  ;
+  astrule SequenceDiagram_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSequenceDiagram.class;
+    }
+    method public ASTITFSequenceDiagram getTFElement() {
+      return getSequenceDiagram();
+    }
+  ;
+  astrule SequenceDiagram_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSequenceDiagram.class;
+    }
+  ;
+  astrule SDBody_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDBody.class;
+    }
+    method public ASTITFSDBody getTFElement() {
+      return getSDBody();
+    }
+  ;
+  astrule SDBody_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDBody.class;
+    }
+    method public ASTITFSDBody getTFElement() {
+      return getSDBody();
+    }
+  ;
+  astrule SDBody_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDBody.class;
+    }
+  ;
+  astrule SDBody_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDBody.class;
+    }
+    method public ASTITFSDBody getTFElement() {
+      return getSDBody();
+    }
+  ;
+  astrule SDBody_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDBody.class;
+    }
+  ;
+  astrule SDCompleteModifier_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDCompleteModifier.class;
+    }
+    method public ASTITFSDCompleteModifier getTFElement() {
+      return getSDCompleteModifier();
+    }
+  ;
+  astrule SDCompleteModifier_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDCompleteModifier.class;
+    }
+    method public ASTITFSDCompleteModifier getTFElement() {
+      return getSDCompleteModifier();
+    }
+  ;
+  astrule SDCompleteModifier_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDCompleteModifier.class;
+    }
+  ;
+  astrule SDCompleteModifier_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDCompleteModifier.class;
+    }
+    method public ASTITFSDCompleteModifier getTFElement() {
+      return getSDCompleteModifier();
+    }
+  ;
+  astrule SDCompleteModifier_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDCompleteModifier.class;
+    }
+  ;
+  astrule SDFreeModifier_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDFreeModifier.class;
+    }
+    method public ASTITFSDFreeModifier getTFElement() {
+      return getSDFreeModifier();
+    }
+  ;
+  astrule SDFreeModifier_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDFreeModifier.class;
+    }
+    method public ASTITFSDFreeModifier getTFElement() {
+      return getSDFreeModifier();
+    }
+  ;
+  astrule SDFreeModifier_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDFreeModifier.class;
+    }
+  ;
+  astrule SDFreeModifier_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDFreeModifier.class;
+    }
+    method public ASTITFSDFreeModifier getTFElement() {
+      return getSDFreeModifier();
+    }
+  ;
+  astrule SDFreeModifier_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDFreeModifier.class;
+    }
+  ;
+  astrule SDInitialModifier_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDInitialModifier.class;
+    }
+    method public ASTITFSDInitialModifier getTFElement() {
+      return getSDInitialModifier();
+    }
+  ;
+  astrule SDInitialModifier_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDInitialModifier.class;
+    }
+    method public ASTITFSDInitialModifier getTFElement() {
+      return getSDInitialModifier();
+    }
+  ;
+  astrule SDInitialModifier_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDInitialModifier.class;
+    }
+  ;
+  astrule SDInitialModifier_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDInitialModifier.class;
+    }
+    method public ASTITFSDInitialModifier getTFElement() {
+      return getSDInitialModifier();
+    }
+  ;
+  astrule SDInitialModifier_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDInitialModifier.class;
+    }
+  ;
+  astrule SDVisibleModifier_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDVisibleModifier.class;
+    }
+    method public ASTITFSDVisibleModifier getTFElement() {
+      return getSDVisibleModifier();
+    }
+  ;
+  astrule SDVisibleModifier_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDVisibleModifier.class;
+    }
+    method public ASTITFSDVisibleModifier getTFElement() {
+      return getSDVisibleModifier();
+    }
+  ;
+  astrule SDVisibleModifier_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDVisibleModifier.class;
+    }
+  ;
+  astrule SDVisibleModifier_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDVisibleModifier.class;
+    }
+    method public ASTITFSDVisibleModifier getTFElement() {
+      return getSDVisibleModifier();
+    }
+  ;
+  astrule SDVisibleModifier_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDVisibleModifier.class;
+    }
+  ;
+  astrule SDObject_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObject.class;
+    }
+    method public ASTITFSDObject getTFElement() {
+      return getSDObject();
+    }
+  ;
+  astrule SDObject_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObject.class;
+    }
+    method public ASTITFSDObject getTFElement() {
+      return getSDObject();
+    }
+  ;
+  astrule SDObject_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObject.class;
+    }
+  ;
+  astrule SDObject_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObject.class;
+    }
+    method public ASTITFSDObject getTFElement() {
+      return getSDObject();
+    }
+  ;
+  astrule SDObject_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObject.class;
+    }
+  ;
+  astrule SDObjectSource_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObjectSource.class;
+    }
+    method public ASTITFSDObjectSource getTFElement() {
+      return getSDObjectSource();
+    }
+  ;
+  astrule SDObjectSource_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObjectSource.class;
+    }
+    method public ASTITFSDObjectSource getTFElement() {
+      return getSDObjectSource();
+    }
+  ;
+  astrule SDObjectSource_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObjectSource.class;
+    }
+  ;
+  astrule SDObjectSource_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObjectSource.class;
+    }
+    method public ASTITFSDObjectSource getTFElement() {
+      return getSDObjectSource();
+    }
+  ;
+  astrule SDObjectSource_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObjectSource.class;
+    }
+  ;
+  astrule SDObjectTarget_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObjectTarget.class;
+    }
+    method public ASTITFSDObjectTarget getTFElement() {
+      return getSDObjectTarget();
+    }
+  ;
+  astrule SDObjectTarget_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObjectTarget.class;
+    }
+    method public ASTITFSDObjectTarget getTFElement() {
+      return getSDObjectTarget();
+    }
+  ;
+  astrule SDObjectTarget_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObjectTarget.class;
+    }
+  ;
+  astrule SDObjectTarget_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObjectTarget.class;
+    }
+    method public ASTITFSDObjectTarget getTFElement() {
+      return getSDObjectTarget();
+    }
+  ;
+  astrule SDObjectTarget_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDObjectTarget.class;
+    }
+  ;
+  astrule SDSendMessage_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDSendMessage.class;
+    }
+    method public ASTITFSDSendMessage getTFElement() {
+      return getSDSendMessage();
+    }
+  ;
+  astrule SDSendMessage_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDSendMessage.class;
+    }
+    method public ASTITFSDSendMessage getTFElement() {
+      return getSDSendMessage();
+    }
+  ;
+  astrule SDSendMessage_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDSendMessage.class;
+    }
+  ;
+  astrule SDSendMessage_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDSendMessage.class;
+    }
+    method public ASTITFSDSendMessage getTFElement() {
+      return getSDSendMessage();
+    }
+  ;
+  astrule SDSendMessage_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDSendMessage.class;
+    }
+  ;
+  astrule SDActivityBar_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDActivityBar.class;
+    }
+    method public ASTITFSDActivityBar getTFElement() {
+      return getSDActivityBar();
+    }
+  ;
+  astrule SDActivityBar_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDActivityBar.class;
+    }
+    method public ASTITFSDActivityBar getTFElement() {
+      return getSDActivityBar();
+    }
+  ;
+  astrule SDActivityBar_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDActivityBar.class;
+    }
+  ;
+  astrule SDActivityBar_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDActivityBar.class;
+    }
+    method public ASTITFSDActivityBar getTFElement() {
+      return getSDActivityBar();
+    }
+  ;
+  astrule SDActivityBar_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDActivityBar.class;
+    }
+  ;
+  astrule SDModifier_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDModifier.class;
+    }
+    method public ASTITFSDModifier getTFElement() {
+      return getSDModifier();
+    }
+  ;
+  astrule SDModifier_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDModifier.class;
+    }
+    method public ASTITFSDModifier getTFElement() {
+      return getSDModifier();
+    }
+  ;
+  astrule SDModifier_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDModifier.class;
+    }
+  ;
+  astrule SDModifier_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDModifier.class;
+    }
+    method public ASTITFSDModifier getTFElement() {
+      return getSDModifier();
+    }
+  ;
+  astrule SDModifier_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDModifier.class;
+    }
+  ;
+  astrule SDElement_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDElement.class;
+    }
+    method public ASTITFSDElement getTFElement() {
+      return getSDElement();
+    }
+  ;
+  astrule SDElement_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDElement.class;
+    }
+    method public ASTITFSDElement getTFElement() {
+      return getSDElement();
+    }
+  ;
+  astrule SDElement_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDElement.class;
+    }
+  ;
+  astrule SDElement_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDElement.class;
+    }
+    method public ASTITFSDElement getTFElement() {
+      return getSDElement();
+    }
+  ;
+  astrule SDElement_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDElement.class;
+    }
+  ;
+  astrule SDInteraction_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDInteraction.class;
+    }
+    method public ASTITFSDInteraction getTFElement() {
+      return getSDInteraction();
+    }
+  ;
+  astrule SDInteraction_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDInteraction.class;
+    }
+    method public ASTITFSDInteraction getTFElement() {
+      return getSDInteraction();
+    }
+  ;
+  astrule SDInteraction_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDInteraction.class;
+    }
+  ;
+  astrule SDInteraction_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDInteraction.class;
+    }
+    method public ASTITFSDInteraction getTFElement() {
+      return getSDInteraction();
+    }
+  ;
+  astrule SDInteraction_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDInteraction.class;
+    }
+  ;
+  astrule SDSource_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDSource.class;
+    }
+    method public ASTITFSDSource getTFElement() {
+      return getSDSource();
+    }
+  ;
+  astrule SDSource_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDSource.class;
+    }
+    method public ASTITFSDSource getTFElement() {
+      return getSDSource();
+    }
+  ;
+  astrule SDSource_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDSource.class;
+    }
+  ;
+  astrule SDSource_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDSource.class;
+    }
+    method public ASTITFSDSource getTFElement() {
+      return getSDSource();
+    }
+  ;
+  astrule SDSource_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDSource.class;
+    }
+  ;
+  astrule SDTarget_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDTarget.class;
+    }
+    method public ASTITFSDTarget getTFElement() {
+      return getSDTarget();
+    }
+  ;
+  astrule SDTarget_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDTarget.class;
+    }
+    method public ASTITFSDTarget getTFElement() {
+      return getSDTarget();
+    }
+  ;
+  astrule SDTarget_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDTarget.class;
+    }
+  ;
+  astrule SDTarget_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDTarget.class;
+    }
+    method public ASTITFSDTarget getTFElement() {
+      return getSDTarget();
+    }
+  ;
+  astrule SDTarget_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDTarget.class;
+    }
+  ;
+  astrule SDAction_List = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDAction.class;
+    }
+    method public ASTITFSDAction getTFElement() {
+      return getSDAction();
+    }
+  ;
+  astrule SDAction_Neg = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDAction.class;
+    }
+    method public ASTITFSDAction getTFElement() {
+      return getSDAction();
+    }
+  ;
+  astrule SDAction_Pat = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDAction.class;
+    }
+  ;
+  astrule SDAction_Opt = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDAction.class;
+    }
+    method public ASTITFSDAction getTFElement() {
+      return getSDAction();
+    }
+  ;
+  astrule SDAction_Rep = 
+    method public Class _getTFElementType() {
+      return de.monticore.lang.sdbasis._ast.ASTSDAction.class;
+    }
+  ;
+}
